@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" type="text/css" href="style ToDo List.css"> -->
+      
+  <title>MyTodoList</title>
+</head>
+<body>
+  
+<div class="wrapper id='wrapper">
+  <div id="frst" class="frst">
+
+    <div class="container">
+      <div class="wrapform">
+        <form action="">
+        <select id="sort">
+          <options value='name'>Sort by name</options>
+          <options value='date'>Sort by name</options>
+          <option value="name">Sort by name</option>
+          <option value="date">Sort by date</option>
+        </select>
+      <input type="text" id="filter" />
+      </form>
+      </div>
+
+    <div class="obol"><p id="alerting">Задание удалится!</p></div>
+
+    <ol type="1" id='list'>   
+    </ol>
+    </div>
+  </div>
+
+  <div id="second" class="second">
+    <div class="input"><input  id="areainput" type="text" name="username" placeholder="Новое задание"/></div>
+    <div class="button"><input id="button" type="button" value='Новое задание' ></div>
+  </div>
+</div>
+
+<script src="Todo List.js"></script>
+<script src="Hello Todo List.js"></script>
+<!-- <script src="Hello Todo List.js"></script>
+<script src="Todo List.js"></script> -->
+</body>
+</html>
