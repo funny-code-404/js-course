@@ -1,0 +1,194 @@
+
+
+.wrapper {
+background: rgb(153,169,255);
+background: linear-gradient(90deg, rgba(153,169,255,1) 0%, rgba(250,121,130,1) 100%);
+	width: 95%;
+	min-height: 500px;
+	height: 100%;
+	max-height: 750px;
+ 	border: 2px solid white;
+ 	border-radius: 10px;
+ 	margin: 0 auto;
+ }
+
+ #years , #month {
+ 	margin-top: 50px;
+ 	width: 90%;
+ 	border-radius: 5px;
+ 	display: flex;
+ 	justify-content: center;
+ 	margin: 0 auto;
+ 	margin-top: 25px;
+ 	background: rgb(94,117,240);
+	background: linear-gradient(90deg, rgba(94,117,240,1) 0%, rgba(244,71,83,1) 100%);
+}
+
+#month {
+	height: 100%;
+	margin-bottom: 25px;
+}
+
+/*#monthName {
+	display: block;
+    padding-left: 25px;
+    width: 50%;
+    background: #E1E3E0;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}*/
+
+#monthName > p {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	text-align: left;
+	color: #536ae2;
+
+}
+
+#calendar {
+align-self: center;
+}
+
+#bodyCalendar {
+	display: flex;
+	justify-content: space-around;
+    min-height: 350px;
+
+	height: 100%;
+}
+
+
+#years, #month {
+	border-radius: 10px;
+ 	border: 1px solid white;
+}
+
+ #years > a {
+ 	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+ 	max-height: 30px;
+ 	line-height: 30px;
+  	margin: 10px;
+ 	text-decoration: none;
+ 	font-size: 1.8em;
+ 	padding: 5px;
+ 	padding: 10px;
+ 	border-radius: 10px;
+ 	border: 1px solid white;
+ 	color: white;
+ 	transition: .8s;
+ }
+
+ #years > a:hover {
+background: rgb(94,117,240);
+background: linear-gradient(90deg, rgba(94,117,240,0.3309698879551821) 0%, rgba(244,71,83,0.4374124649859944) 100%);
+	transform: scale(1.1);
+	transition: .3s;
+ }
+
+
+ #years :last-child {
+ 	font-size: 1em;
+ 	text-align: center;
+ 	line-height: 15px;
+ }
+
+ 
+  #month > a {
+ 	margin: 10px;
+ 	text-decoration: none;
+ 	font-size: 2em;
+ 	padding: 7px;
+ 	border-radius: 7px;
+ 	border: 1px solid white;
+ 	font-size: 1.2em;
+ 	color: white;
+ 	opacity: 0.8;
+ }
+
+ #second {
+ 	width: 90%;
+ 	height: 70%;	
+ 	margin: 0 auto;
+ 	margin-top: 5px;
+ 	border-radius: 5px;
+ }
+
+	table {
+	min-width: 500px;
+
+ 	justify-content: center;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	text-align: center;
+	border-collapse: collapse;
+	border-spacing: 5px;
+	background: white;
+	border-radius: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;	
+	}
+
+	th {
+	font-size: 22px;
+	font-weight: 300;
+	padding: 8px 6px;
+	border-bottom: 2px solid #f65963;
+	color: #536ae2;
+	}
+
+	tbody tr:nth-child(2) {
+	border-bottom: 2px solid #f65963;
+	}
+	td
+	 {
+	padding: 10px;
+	color: #8D8173;
+	}
+
+	#but1 , #but2 {
+		display: flex;
+	}
+
+	#incrementCount , #decrementCount {
+		align-self: center;
+		position: relative;
+		width: 30px;
+		height: 30px;
+		background: #8193f1;
+		border-radius: 5px;
+		margin: 0 auto;
+		display: grid;
+		align-self: center;
+		color: white;
+		text-align: center;
+		line-height: 30px;
+	}
+
+	th {
+		margin: 0 auto;
+
+	}
+
+		#incrementCount {
+		margin-left: 5px;
+	}
+		#decrementCount {
+		margin-right: 5px;
+	}
+
+#calendar > p {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	text-align: center;
+	font-size: 1.5rem;
+	color: white;
+	opacity: 0.9;
+	margin: 0 auto;
+	width: 90%;
+}
+
+
+#calendar > p > a {
+ 	color: white;
+}
