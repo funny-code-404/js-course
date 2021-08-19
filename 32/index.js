@@ -1,52 +1,52 @@
-function getValue(a) {
+export function getValue(a) {
   return a;
 }
 
-function substract(a, b) {
+export function substract(a, b) {
   return a - b;
 }
 
-function quotient(a, b) {
+export function quotient(a, b) {
   return a / b;
 }
 
-function randomInRage(min, max) {
+export function randomInRage(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-function capitalize(str) {
+export function capitalize(str) {
   return `${str[0].toUpperCase()}${str.slice(1)}`;
 }
 
-function arrayToString(arr, divider) {
+export function arrayToString(arr, divider) {
   return arr.join(divider);
 }
 
-function invitation(user) {
+export function invitation(user) {
   return `Hello! My name is ${user.name}. I am ${user.age}`;
 }
 
-function copyArray(arr) {
+export function copyArray(arr) {
   return arr.slice(0);
 }
 
-function copyObject(obj) {
+export function copyObject(obj) {
   return { ...obj };
 }
 
-function objectToArray(obj) {
+export function objectToArray(obj) {
   return Object.values(obj);
 }
 
-function getEven(a) {
+export function getEven(arr) {
   return arr.filter((item) => !(item % 2));
 }
 
-function getOdd(a) {
+export function getOdd(arr) {
   return arr.filter((item) => item % 2);
 }
 
-function arrayToObject(arr) {
+export function arrayToObject(arr) {
   return arr.reduce((obj, item) => {
     obj[item] = item;
 
@@ -54,12 +54,12 @@ function arrayToObject(arr) {
   }, {});
 }
 
-function sum(a) {
+export function sum(a) {
   return function (b) {
     return a + b;
   };
 }
 
-function makeAction(action, a, b) {
+export function makeAction(action, a, b) {
   return action(a, b);
 }
