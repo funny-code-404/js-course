@@ -35,8 +35,119 @@ describe("capitalize", () => {
 
 describe("arrayToString", () => {
     it("join", () => {
-        const a = utils.arrayToString([1, 2, 3], 1);
-        const b = a;
-        expect(a).toHaveLength(5);
+        expect(utils.arrayToString([1, 2, 3], '-')).toHaveLength(5);
+        expect(utils.arrayToString([1, 2, 3], '')).toHaveLength(3);
+    });
+});
+
+describe('invitation', () => {
+    it('invitationName', () => {
+        const user = [{
+            name: "Dan",
+            age: 25,
+        },
+        {
+            name: "Jane",
+            age: 30,
+        }
+        ];
+        const toContain = {
+            name: "Dan",
+            age: 25,
+        };
+
+        const userString = utils.invitation(user);
+        expect(utils.invitation(userString)).toBeTruthy;
+        expect(user).toContainEqual(toContain);
+    });
+});
+
+
+describe("copyArray", () => {
+    it("copyArrayIsArray", () => {
+        const arr = [1, 2, 3];
+        const arr1 = arr;
+        expect(utils.copyArray(arr)).toContainEqual(2);
+        expect(utils.copyArray(arr)).toEqual(arr1);
+
+    });
+});
+
+describe("copyObject", () => {
+    it("copyObjectIsObject", () => {
+        const obj = {
+            name: "Jane",
+            age: 25,
+        };
+        const obj1 = obj;
+        expect(utils.copyObject(obj)).toEqual(obj1);
+
+    });
+});
+
+describe("objectToArray", () => {
+    it("objectToArrayIsArray", () => {
+        const arrfull = ["Anna", 25, "dog"];
+        const obj = {
+            name: "Anna",
+            age: 25,
+            pet: "dog",
+        };
+        const arr = arrfull;
+        expect(utils.objectToArray(obj)).toEqual(arr);
+        expect(utils.objectToArray(obj)).toContain(25);
+        expect(utils.objectToArray(obj)).toHaveLength(3);
+    });
+});
+
+  describe("getEven", () => {
+    it("getEvenIsArray", () => {
+        const array = [1, 2, 3, 44, 66];
+        const filterArray = [2,44,66];
+        expect(utils.getEven(array)).toEqual(filterArray);
+        expect(utils.getEven(array)).toContain(44);
+        expect(utils.getEven(array)).toHaveLength(3);
+    });
+});
+
+describe("getOdd", () => {
+    it("getOddIsArray", () => {
+        const array = [1, 2, 3, 44, 66];
+        const filterArray = [1,3];
+        expect(utils.getOdd(array)).toEqual(filterArray);
+    });
+});
+
+  describe("arrayToObject", () => {
+    it("arrayToObjectIsObject", () => {
+        const array = [25, "Marina", "Cat", 386];
+        const object = { 
+            25: 25,
+            386: 386,
+            Cat: "Cat",
+            Marina: "Marina",
+        };
+        expect(utils.arrayToObject(array)).toEqual(object);
+    });
+});
+
+  describe('sum', () => {
+      it("sumCorrect", () =>{
+          const a = 10;
+          const b = 5;
+          const result = 15;
+          expect(utils.sum(a)(b)).toBe(result)
+      });
+  });
+
+  
+  describe('makeAction', () => {
+    it("makeActionDevide", () => {
+        const a = 10;
+        const b = 5;
+        function devide (a,b) {
+            return a/b;
+        };
+        expect(utils.makeAction(devide,a,b)).toBe(2)
     });
 });

@@ -39,11 +39,11 @@
     return Object.values(obj);
   }
   
-  export function getEven(a) {
+  export function getEven(arr) {
     return arr.filter((item) => !(item % 2));
   }
   
-  export function getOdd(a) {
+  export function getOdd(arr) {
     return arr.filter((item) => item % 2);
   }
   
