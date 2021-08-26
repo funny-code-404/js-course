@@ -30,8 +30,6 @@ addBtn.onclick = () => { // нажали на кнопку +
     localStorage.setItem("New Todo", JSON.stringify(listArray)); // первела js-объект в  json-формат
     showTasks();
     addBtn.classList.remove("active"); //инактивировала кнопку после введения таска 
-
-
 }
 
 // чтоб показать таски
@@ -52,21 +50,11 @@ function showTasks() {
     let newLiTag = "";
     listArray.forEach((element, index) => {
         newLiTag += `<li >${element}<span data-id="${index}" class="board__card-icon"><i class="fas fa-trash"></i></span></li>`;
-        // newLiTag += `<li >${element}<span class="board__card-icon" onclick="deleteTask(${index})"><i class="fas fa-trash"></i></span></li>`;
     });
     todoList.innerHTML = newLiTag; //добавили новый ли в список
     inputBox.value = ""; //после добавления обнулила
 }
 
-/*// удалить таски через мусорку
-function deleteTask(index) {
-    let getLocalStorageData = localStorage.getItem("New Todo");
-    listArray = JSON.parse(getLocalStorageData);
-    listArray.splice(index, 1); //delete or remove the li
-    localStorage.setItem("New Todo", JSON.stringify(listArray));
-    showTasks(); //call the showTasks function
-}
-*/
 // удалить таски через мусорку
 delOneTaskBtn.addEventListener('click', (event, index) => {
     const id = event.target.getAttribute('data-id');
@@ -101,7 +89,6 @@ function search() {
             li[i].style.display = "";
         } else {
             li[i].style.display = "none";
-
         }
     }
 }
