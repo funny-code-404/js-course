@@ -42,7 +42,7 @@ module.exports = {
     },
     optimization: optimization(),
     devServer: {
-        port: 8002,
+        port: 8004,
     },
     plugins: [
         new HTMLWebpackPlugin({
