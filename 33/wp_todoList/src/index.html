@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <section class="header__wrapper">
+                <div class="header__nav-left">
+                    <ul class="header__list">
+                        <li class="header__list-item"><a href="#" class="header__link"><i class="fas fa-bars"></i></a>
+                        </li>
+                        <li class="header__list-item"><a href="#" class="header__link"><i class="fas fa-home"></i></a>
+                        </li>
+                        <li class="header__list-item"><a href="#" class="header__link"><i class="fab fa-flipboard"></i>
+                                Boards</a></li>
+                    </ul>
+                    <div class="header__search"></div>
+                </div>
+
+                <div class="header__title-container"><i class="fas fa-paste"></i>
+                    <h3 class="header__title"><a>Trello</a></h3>
+                </div>
+
+                <div class="header__nav-right">
+                    <ul class="header__list">
+                        <li class="header__list-item"><a href="#" class="header__link"><i class="fas fa-plus"></i></a>
+                        </li>
+                        <li class="header__list-item"><a href="#" class="header__link"><i
+                                    class="fas fa-info-circle"></i></a></li>
+                        <li class="header__list-item"><a href="#" class="header__link"><i class="far fa-bell"></i></a>
+                        </li>
+                        <li class="header__list-item"><a href="#" class="header__link"><i
+                                    class="fas fa-user-circle"></i></a></li>
+                    </ul>
+
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section class="board">
+            <div class="board__wrapper">
+                <div class="container">
+                    <div class="board__main-content">
+                        <div class="board__header">
+                            <div class="board__nav-lef">
+                                <ul class="board__list">
+                                    <li class="board__list-item"><a href="#" class=""><i class="fab fa-flipboard"></i>
+                                            Board <i class="fas fa-chevron-down"></i></a></li>
+                                    <li class="board__list-item"><a href="#" class="">Marketing Overwiew</a></li>
+                                    <li class="board__list-item"><a href="#" class=""><i class="far fa-star"></i></a>
+                                    </li>
+                                    <li class="board__list-item"><a href="#" class=""><i class="fas fa-users"></i>For
+                                            workspace</a></li>
+                                    <li class="board__list-item round"><a href="#" class="">J</a></li>
+                                    <li class="board__list-item"><a href="#" class=""><i
+                                                class="fas fa-user-plus"></i>Invite</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="board__nav-right">
+                                <ul class="board__list">
+                                    <li class="board__list-item"><a href="#" class=""> <i class="fas fa-poo-storm"></i>
+                                            Automation</a></li>
+                                    <li class="board__list-item"><a href="#" class=""><i
+                                                class="fas fa-folder-minus"></i>
+                                            Menu</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="board__canvas">
+                            <div class="board__card">
+                                <h3>New</h3>
+                                <form class="board__card-input-field">
+                                    <input class="board__card-input" type="text" placeholder="Add new task">
+                                    <button><i class="fas fa-plus"></i></button>
+                                </form>
+                                <ul class="board__card-todo-List" id="board__card-todo-items">
+                                    <!-- Получаем данные из localSTR -->
+                                </ul>
+                                <div class="board__card-container-for-button">
+                                    <span>You have <span class="board__card-count-of-tasks"></span> pending tasks</span>
+                                    <button>Delete All</button>
+                                </div>
+
+                                <div class="board__card-input-field-filter">
+                                    <input type="text" placeholder="Search" id="board__card-search">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
