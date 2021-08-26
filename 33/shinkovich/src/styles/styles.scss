@@ -1,10 +1,7 @@
 @import "~normalize.css";
-@import "fonts.scss";
 @import "inProgr.scss";
+//@import "~@fortawesome/fontawesome-free/css/all.min.css";
 
-body {
-	background-color: tan;
-}
-ul {
-	font-family: "My Custom font";
+.main-app-container {
+	display: flex;
 }
