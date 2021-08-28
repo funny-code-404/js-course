@@ -1,0 +1,53 @@
+@import "~normalize.css";
+@import "fonts.scss";
+
+ul {
+  font-family: "My Custom font";
+}
+/* Таблица календаря  */
+.calendar {
+  border: 1px solid #909090;
+  font-size: 11px;
+  cursor: pointer;
+  color: #000000;
+}
+/* Заголовок */
+.calendar th {
+  text-align: center;
+  width: 26px;
+  height: 20px;
+  background: #e2f2fc;
+}
+/* Ячейка дня */
+.calendar td {
+  text-align: right;
+  width: 20px;
+  height: 20px;
+  padding-right: 4px;
+  border: 1px solid #909090;
+  text-align: right;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Затемненный день */
+.calendar td.grayed {
+  background: #f0f0f0;
+  cursor: auto;
+}
+/* Выбранный день */
+.calendar td.selected {
+  background: #038fcf;
+  color: #ffffff;
+  box-shadow: 1px 1px rgba(255, 255, 255, 0.5) inset;
+}
+/* Праздничный день */
+.calendar td.holiday {
+  color: #ff0000;
+}
+/* Кнопки навигации */
+.calendar td.navigation {
+  text-align: center;
+  border: 0px none;
+  font-size: 16px;
+}
