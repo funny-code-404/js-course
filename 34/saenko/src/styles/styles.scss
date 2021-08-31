@@ -11,9 +11,15 @@ body {
   width: 70%;
   margin: 0 auto;
   display: grid;
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 4fr; 
+  gap: 1px 1px; 
+}
+
+.day-names {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 1px 1px; 
 }
 
@@ -28,6 +34,13 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 24px;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1px 1px; 
 }
 
 .date-cell {
