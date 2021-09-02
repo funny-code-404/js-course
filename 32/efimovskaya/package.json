@@ -1,0 +1,19 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Efimovskaya",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.0.6",
+    "save-dev": "0.0.1-security"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.0",
+    "babel-jest": "^27.0.6"
+  }
+}
