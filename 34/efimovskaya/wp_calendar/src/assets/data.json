@@ -1,0 +1,22 @@
+{
+    "users": [
+        {
+            "name": "Pit",
+            "age": "16",
+            "status":"user"
+        },
+        {
+            "name": "Ralf",
+            "age": "46",
+            "status":"user"
+        },{
+            "name": "678",
+            "age": "26",
+            "status":"user"
+        },{
+            "name": "Admin",
+            "age": "56",
+            "status":"admin"
+        }
+    ]
+}
