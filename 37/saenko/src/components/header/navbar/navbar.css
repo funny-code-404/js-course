@@ -1,0 +1,29 @@
+.menu {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 50px;
+  }
+  
+  .menu--row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .menu--row .menu__item:not(:last-of-type) {
+    margin-right: 76px;
+  }
+  
+  .menu__link:hover {
+    color: #9d8665;
+  }
+  
+  .menu__link:active {
+    color: #9d8665;
+  }
