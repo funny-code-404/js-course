@@ -1,0 +1,15 @@
+@import '~normalize.css';
+@import 'fonts.css';
+
+body{
+    background-color: tan;
+}
+
+ul{
+    font-family: 'My cast';
+    
+}
+
+img{
+    max-width: 300px;
+}

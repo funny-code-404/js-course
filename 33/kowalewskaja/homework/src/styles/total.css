@@ -1,0 +1,27 @@
+
+.total-numb {
+    margin-bottom: 40px;
+}
+
+.total-numb:last-child {
+    margin-bottom: 0px;
+}
+
+.total-numb h6 {
+    margin-bottom: 10px;
+}
+
+.total-numb input{
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 55px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    background-color: transparent;
+    box-shadow: none;
+    padding-left: 0;
+}
+
+.total-numb input::placeholder{
+    color: #000000;
+}

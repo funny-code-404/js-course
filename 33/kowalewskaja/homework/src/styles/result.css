@@ -1,0 +1,33 @@
+
+
+#accumulation,#spend{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+
+.result-block {
+    display: flex;
+    width: 389px;
+    justify-content: space-between;
+}
+
+.result-block .total-numb{
+    display: flex;
+    align-items: baseline;
+}
+
+.result-block .total-numb h6{
+    margin-right: 10px;
+}
+
+.result-block .total-numb span {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}

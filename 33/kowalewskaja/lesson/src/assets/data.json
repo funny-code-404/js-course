@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "name": "Pit",
+      "age": "19",
+      "status": "user"
+    },
+    {
+      "name": "Maja",
+      "age": "18",
+      "status": "user"
+    },
+    {
+      "name": "Piter",
+      "age": "21",
+      "status": "user"
+    },
+    {
+      "name": "Admin",
+      "age": "20",
+      "status": "admin"
+    }
+  ]
+}
