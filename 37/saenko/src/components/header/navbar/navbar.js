@@ -6,14 +6,14 @@ class Navbar extends Component {
     
     render () {
         const li = navLinks.map(link => 
-                <li className="menu__item">
+                <li key={link.id} className="menu__item">
                     <a className="menu__link" href={link.href}>{link.name}</a>
                 </li>
             );
 
         return (
             <nav className="header__menu">
-                <ul class="menu menu--row">
+                <ul className="menu menu--row">
                     {li}
                 </ul>
             </nav>

@@ -1,0 +1,23 @@
+.section__title {
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  .section__line {
+    border-width: 0;
+    height: 3px;
+    margin-bottom: 75px;
+    background-color: #710707;
+  }
+  
+  .title--beige {
+    color: #9d8665;
+  }
+  
+  .title--margin {
+    margin-bottom: 25px;
+  }
