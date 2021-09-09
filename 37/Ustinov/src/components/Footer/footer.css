@@ -1,0 +1,126 @@
+.footer__contact-section {
+  background-color: #141a20;
+  color: white;
+  padding: 42px 0 39px 0;
+}
+.footer__container {
+  display: flex;
+}
+
+.footer__company-container {
+  max-width: 250px;
+  margin-right: 71px;
+}
+.company-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  line-height: 15px;
+  margin-bottom: 20px;
+  letter-spacing: 0.846154px;
+  font-weight: normal;
+}
+.company-logo {
+  margin-bottom: 17px;
+}
+
+.company-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  line-height: 19px;
+  letter-spacing: 0.85px;
+}
+.footer__links-container {
+  max-width: 262px;
+  margin-right: 58px;
+}
+.links-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  line-height: 15px;
+  margin-bottom: 10px;
+  letter-spacing: 0.846154px;
+  font-weight: normal;
+}
+.links-navigation {
+  display: flex;
+  gap: 28px;
+}
+
+.links-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.links-item__link {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 25px;
+  letter-spacing: 0.846154px;
+}
+a:hover {
+  color: rgba(0, 164, 229, 1);
+}
+
+.footer__contact-container {
+  max-width: 141px;
+  margin-right: 46px;
+}
+
+.contact-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  line-height: 15px;
+  margin-bottom: 15px;
+  letter-spacing: 0.846154px;
+  font-weight: normal;
+}
+.contact-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.846154px;
+}
+
+.contact-text:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.footer__social-container {
+  max-width: 87px;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.social-item__link {
+  color: white;
+  font-size: 12px;
+}
+
+/* copyright-section */
+
+.footer__copyright-section {
+  background-color: #171819;
+  padding: 22px 0;
+}
+.footer__copyright-text {
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.846154px;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+}
