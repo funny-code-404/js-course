@@ -38,7 +38,7 @@ class Form extends Component {
         let  passwordValid = this.state.passwordValid;
 
         switch (fieldName) {
-            case "name": nameValid = /^[A-Z]/g.test(value);
+            case "name": nameValid = /^\p{Lu}/gu.test(value);
             break;
             case "email": emailValid = /@+/g.test(value);
             break;
