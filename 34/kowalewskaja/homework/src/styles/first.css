@@ -1,0 +1,28 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;
+    padding-top: 115px;
+    padding-left: 162px;
+}
+
+
+h6 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+
+.main-wrapper h1 {
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 60px;
+}

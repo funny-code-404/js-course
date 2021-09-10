@@ -33,7 +33,7 @@ module.exports = {
   optimization: optimazeApp(),
 
   devServer: {
-    port: 8090,
+    port: 7087,
   },
 
   output: {
@@ -59,7 +59,7 @@ module.exports = {
         use: [{
             loader: MiniCssExtractPlugin.loader,
             options: {
-              pulicPath: "",
+              publicPath: "",
             },
           }, "css-loader"],
       },
@@ -69,7 +69,7 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              pulicPath: "",
+              publicPath: "",
             },
           },
           "css-loader",
