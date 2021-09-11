@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "OpenSansBold";
+  src: local("OpenSansBold"),
+    url(./fonts/Open_Sans/OpenSans-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "OpenSansRegular";
+  src: local("OpenSansRegular"),
+    url(./fonts/Open_Sans/OpenSans-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: local("OpenSansSemiBold"),
+    url(./fonts/Open_Sans/OpenSans-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "OpenSansExtraBold";
+  src: local("OpenSansExtraBold"),
+    url(./fonts/Open_Sans/OpenSans-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "BedasNeueBoldRegular";
+  src: local("BedasNeueBoldRegular"),
+    url(./fonts/BebasNeueBold/bebas_neue_regular.ttf) format("truetype");
+}
+
+.title {
+  font-family: OpenSansBold;
+  color: #48555b;
+}
+
+.subtitle {
+  font-family: OpenSansRegular;
+  color: #48555b;
+}
+
+.line {
+  width: 50px;
+  height: 2px;
+  background-color: #16ace8;
+  border-width: 0;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

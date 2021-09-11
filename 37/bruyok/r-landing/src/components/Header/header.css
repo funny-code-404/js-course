@@ -1,0 +1,37 @@
+.header__content {
+  background: url(../../images/header-bg.jpg) center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header__content-inner {
+  padding: 40px 0 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  height: 80vh;
+}
+
+.header__title {
+  font-family: BedasNeueBoldRegular;
+  font-size: 3.8rem;
+  letter-spacing: 0.095em;
+  color: #ffffff;
+}
+
+.header__description {
+  font-family: OpenSansSemiBold;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.header__scpoll-down {
+  font-family: OpenSansSemiBold;
+  font-size: 0.7rem;
+  letter-spacing: 0.336em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

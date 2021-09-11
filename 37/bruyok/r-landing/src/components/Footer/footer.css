@@ -1,0 +1,90 @@
+.footer__inner {
+  background: #141a20;
+  padding: 40px 0 50px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: OpenSansSemiBold;
+  font-size: 0.68rem;
+  letter-spacing: 0.846154px;
+  color: #ffffff;
+}
+
+.footer__company {
+  max-width: 250px;
+  margin-right: 20px;
+}
+
+.footer__title {
+  font-family: OpenSansRegular;
+  font-size: 0.68rem;
+  letter-spacing: 0.846154px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer__logo {
+  margin-bottom: 16px;
+}
+
+.footer__subtitle {
+  font-size: 0.68rem;
+  line-height: 19px;
+  letter-spacing: 0.85px;
+  color: #ffffff;
+}
+
+.footer__links {
+  margin-right: 15px;
+}
+
+.footer__links-items {
+  display: flex;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+.footer__link {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.footer__contact-us {
+  display: flex;
+  max-width: 274px;
+  margin-right: 10px;
+}
+
+.footer__adress {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.footer__link-tel {
+  margin-bottom: 20px;
+}
+
+.footer__social-media {
+  margin-top: 40px;
+}
+
+.footer__social-media-link {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.footer__social-media-link:not(:last-child) {
+  margin-right: 15px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  background: #171819;
+  padding: 23px 0;
+}

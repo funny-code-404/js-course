@@ -1,0 +1,38 @@
+.header__navigation--border-bottom {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.header__nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header__menu-button {
+  display: none;
+  font-size: 20px;
+  color: #48555b;
+}
+
+.menu__link {
+  font-family: OpenSansSemiBold;
+  font-size: 0.75rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #48555b;
+}
+
+.menu__link--active:hover {
+  font-family: OpenSansBold;
+  color: #00a4e5;
+  transition-duration: 0.5s;
+}
