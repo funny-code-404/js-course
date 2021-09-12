@@ -1,0 +1,218 @@
+
+  /*HEADER*/
+
+  .header {
+    background:url('../../assets/roof.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width:100%;
+    color:var(--white);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'BebasNeueBold';
+}
+
+.header__projeco-logo {
+  letter-spacing:normal;
+  font-size: 24px;
+  margin-top: 40px;
+  font-weight: bold;
+  margin-bottom: 340px;
+}
+
+.header__designation {
+ margin-bottom: 300px;
+}
+
+.header__title {
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: 5.70937px;
+}
+
+.header__meaning {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.header__scroll {
+  margin-bottom: 70px;
+  font-family: Open Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 3.700000047683716px;
+}
+
+@media screen and (max-width:1360px) {
+  body {width: calc(1200px +5%);
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  .header__projeco-logo {
+    margin-top: 70px;
+  } 
+}
+
+@media screen and (max-width:500px) {
+  .header__projeco-logo {
+    font-size: 18px;
+    margin-top: 70px;
+    margin-bottom: 200px;
+  }
+
+  .header__triangle {
+    font-size: 20px;
+  }
+
+  .header__designation {
+    margin-bottom: 200px;
+   }
+
+   .header__title {
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 4.70937px;
+  }
+  
+}
+
+/*END HEADER*/
+
+/*NAVBAR*/
+
+.navbar--background-color {
+  background-color:var(--white);
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0px;
+}
+
+.navbar__logo--leterrs-disign {
+  letter-spacing:normal;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar__triangle {
+  color:var(--marine);
+  font-size: 20px;
+}
+
+.navbar__list {
+  display:flex;
+  flex-direction: row;
+  list-style:none;
+}
+
+.navbar__item:not(:last-child) {
+ margin-right: 40px;
+}
+
+.navbar__item--font-style {
+  font-size: 18px;
+}
+
+.navbar__link {
+  text-decoration:none;
+  color:var(--grey);
+}
+
+.navbar__link:hover {
+  color: var(--marine);
+}
+
+.navbar__line {
+  margin-top:0px;
+  margin-bottom: 40px;
+  border: none;
+  color:var(--light-grey); 
+  background-color:var(--light-grey); 
+  height: 2px; 
+}
+
+.navbar-fixed__container {
+  display:none;
+}
+@media screen and (max-width:768px) {
+  .navbar__container {
+    display:none;
+  }
+
+  .navbar-fixed, .navbar-fixed--background-color {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background: white;
+    top: 0;
+  }
+
+  .navbar-fixed__container {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+
+.navbar-fixed__navbar-logo {
+ margin-top: 10px;
+}
+
+.menu__btn,#menu__toggle {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 15px;
+  right: 45px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 9999;
+  }
+
+  /* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+display: block;
+position: absolute;
+width: 100%;
+height: 2px;
+background-color: #616161;
+}
+.menu__btn > span::before {
+content: '';
+top: -8px;
+}
+.menu__btn > span::after {
+content: '';
+top: 8px;
+}
+
+.menu__box {
+display: block;
+position: fixed;
+visibility: hidden;
+top: 0;
+right: -100%;
+width: 300px;
+height: 100%;
+margin: 0;
+padding: 80px 0;
+list-style: none;
+text-align: center;
+background-color: #ECEFF1;
+box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+}
+/*END NAVBAR*/

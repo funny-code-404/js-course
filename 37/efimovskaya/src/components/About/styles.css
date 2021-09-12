@@ -1,0 +1,188 @@
+/*ABOUT*/
+.information-about {
+    margin-bottom: 100px;
+}
+.information-about__title {
+    text-align: center;
+}
+
+.information-about__title--title-style {
+    color: var(--grey);
+    font-size: 18px;
+}
+
+.information-about__line {
+
+    width: 50px;
+    margin-bottom: 80px;
+    border-width: 1px;
+    border-color: var(--marine);
+    background: var(--marine);
+}
+
+.information-about__history-title {
+    width: 350px;
+    height: 85px;
+    margin-bottom: 60px;
+}
+
+.infomation-about__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.information-about__container>* {
+    flex-grow: 1;
+}
+
+.information-about__history {
+    font-style: bold;
+    font-size: 20px;
+    line-height: 27px;
+    vertical-align: bottom;
+    width: 50%;
+}
+
+.information-about--konstruct-item-color {
+    color: var(--marine);
+}
+
+.information-about__text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 23px;
+    width: 400px;
+    height: 115px;
+}
+
+.information-about__container-for-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+
+
+.information-about__image--style-for-image-for-plan {
+    background-image: url('../../assets/plan.png');
+    width: 140px;
+    height: 225px;
+    background-position: left 170px top -18px;
+}
+
+.information-about__image--style-for-image-for-manage {
+    background-image: url('../../assets/manage.png');
+    width: 140px;
+    height: 225px;
+    background-position: center;
+}
+
+.information-about__image--style-for-image-for-build {
+    background-image: url('../../assets/build.png');
+    width: 140px;
+    height: 225px;
+    background-position: left -59px top;
+}
+
+.information-about__tagline {
+    color: var(--white);
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 15px;
+    letter-spacing: 0.1875px;
+}
+
+@media screen and (max-width:990px) {
+    .infomation-about__container {
+        display: block;
+        text-align: center;
+    }
+
+    .information-about__history {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .information-about__history-title {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .information-about__text {
+        width: 100%;
+    }
+
+    .information-about__container-for-images {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:730px) {
+
+
+    .information-about__history-title {
+        height: 85px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .information-about__history-title {
+        width: 100%;
+        height: 85px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .information-about__image--style-for-image-for-plan {
+        background-image: url('../../assets/plan.png');
+        width: 80px;
+        height: 160px;
+        background-position: center;
+    }
+
+    .information-about__image--style-for-image-for-manage {
+        background-image: url('../../assets/manage.png');
+        width: 80px;
+        height: 160px;
+        background-position: center;
+    }
+
+    .information-about__image--style-for-image-for-build {
+        background-image: url('../../assets/build.png');
+        width: 80px;
+        height: 160px;
+        background-position: left -59px top;
+    }
+
+    .information-about__tagline {
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 10px;
+        text-align: left;
+    }
+
+    .information-about__history {
+        margin-bottom: 40px;
+    }
+
+    @media screen and (max-width:300px) {
+
+        .information-about__history {
+            margin-bottom: 90px;
+        }
+
+        .information-about__history-title {
+            margin-bottom: 90px;
+        }
+    }
+}

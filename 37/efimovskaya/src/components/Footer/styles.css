@@ -1,0 +1,163 @@
+ /*FOOTER*/
+ .footer {
+     background: var(--dark);
+     height: auto;
+     color: var(--white);
+ }
+
+ .footer__container {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     padding-top: 20px;
+    }
+
+ .footer__company {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .footer__title-s {
+     font-weight: normal;
+     font-size: 11px;
+     line-height: 15px;
+     letter-spacing: 0.846154px;
+    
+     margin-bottom: 20px;
+ }
+
+
+ .footer__paragraph {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 11px;
+     line-height: 19px;
+     letter-spacing: 0.85px;
+     width: 250px;
+     height: auto;
+   
+ }
+
+ .footer__links {
+     display: flex;
+     justify-content: space-between;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 11px;
+     line-height: 25px;
+     letter-spacing: 0.846154px;
+ }
+
+ .footer__links-title {
+     text-align: left;
+ }
+
+ .footer__links--title-s {
+     text-align: left;
+ }
+
+ .footer__items {
+     list-style: none;
+
+ }
+
+ #footer__item2,
+ #footer__item3 {
+     margin-left: 20px;
+ }
+
+ .footer__list-position {
+     margin-top: 50px;
+ }
+
+ .footer__link {
+     color: var(--white);
+ }
+
+ .footer__link:hover {
+     cursor: pointer;
+     color: var(--marine);
+     text-decoration: none;
+     transition: 0.5s;
+ }
+
+ .footer__contacts-title {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 11px;
+     line-height: 15px;
+     letter-spacing: 0.846154px;
+ }
+
+ .footer__contacts-container {
+     margin-top: 15px;
+     width: 140px;
+     height: auto;
+ }
+
+ .footer__contacts-tel,
+ .footer__contacts-email {
+     color: var(--white);
+ }
+
+ #footer__item2,
+ #footer__item,
+ #footer__item3 {
+     padding-inline-start: 0px;
+ }
+
+
+ @media screen and (max-width:1024px) {
+
+     .footer__container {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .footer__company {
+         margin-left: auto;
+         margin-right: auto;
+         text-align: center;
+     }
+
+     .footer__links {
+         flex-flow: wrap;
+         margin-bottom: 20px;
+     }
+
+     .footer__links-title {
+         text-align: center;
+     }
+
+     .footer__links--title-s {
+         text-align: center;
+         margin-left: auto;
+         margin-right: auto;
+     }
+
+     .footer__list {
+         margin-left: auto;
+         margin-right: auto;
+         text-align: center;
+     }
+
+     .footer__item {
+         margin-left: auto;
+         margin-right: auto;
+         text-align: center;
+         padding-inline-start: 0px;
+     }
+
+     .footer__contacts {
+         margin-left: auto;
+         margin-right: auto;
+         text-align: center;
+     }
+
+     .footer__contacts {
+         margin-bottom: 20px;
+     }
+
+ }
+
+ /*END FOOTER*/

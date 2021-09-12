@@ -1,0 +1,144 @@
+/*SERVICES*/
+.services {
+    margin-bottom: 115px;
+}
+
+.services__cap-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    color: var(--grey);
+}
+
+.services__cap-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 2.30625px;
+
+}
+
+.services__cap-line {
+    width: 50px;
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    border-width: 1px;
+    border-color: var(--marine);
+    background: var(--marine);
+}
+
+.services__cap-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    width: 405px;
+    height: auto;
+}
+
+.services__cap-button--disign {
+    background-color: var(--marine);
+    border: none;
+    color: white;
+    padding: 11px 29px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.services__service-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services__service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 295px;
+    height: 330px;
+    border-style: solid;
+    border-color: var(--light-grey);
+    border-width: 1px;
+    margin-bottom: 15px;
+    padding: 25px 40px;
+}
+
+
+.services__charter {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.426667px;
+
+}
+
+.services__information-about-charter {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.1875px;
+}
+
+@media screen and (max-width:990px) {
+    .services__cap-container {
+        display: block;
+        text-align: center;
+    }
+
+    .services__cap-title {
+        margin-bottom: 30px;
+    }
+
+    .services__cap-line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    .services__cap-text {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .services__service-items {
+        display: block;
+    }
+
+    .services__service {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    .services__service {
+        width: 90%;
+        height: auto;
+    }
+
+    .services__icon {
+        margin-bottom: 15px;
+    }
+
+    .services__charter {
+        margin-bottom: 15px;
+    }
+}
+
+/*END SERVICES*/
