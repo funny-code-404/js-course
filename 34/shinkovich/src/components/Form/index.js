@@ -58,13 +58,34 @@ class Form {
 		btn.innerHTML = 'buttons';
 
 		btn.addEventListener('click', async () => {
+
 			const data = await this.getDataBut();
-			const [cssdata] = data.data;//получение и дестр данных
+
+			//const [cssdata] = data.data;//получение и дестр данных
 
 			const allBtns = [...data.data];
+
 			const id = allBtns.map(el => {//получение id в переменную
 				return el.id
 			})
+
+			const bG = allBtns.map(el => {
+				return el["background-color"]
+			})
+
+			const bR = allBtns.map(el => {
+				return el["border-radius"]
+			})
+
+			const wid = allBtns.map(el => {
+				return el.width
+			})
+
+			const hei = allBtns.map(el => {
+				return el.height
+			})
+			console.log(wid);
+
 
 			for (let i = 0; i <= 2; i++) {//создание кнопок из запроса
 
@@ -72,11 +93,11 @@ class Form {
 				btns.innerHTML = 'кнопка';
 
 				btns.style.cssText = `
-				background-color: ${cssdata['background-color']};
-				height: ${cssdata.height};
-				width: ${cssdata.width};
-				border-radius: ${cssdata['border-radius']}
-				`;
+			background-color: ${bG[i]};
+			height: ${hei[i]};
+			width: ${wid[i]};
+			border-radius: ${bR[i]}
+			`;
 
 				let att1 = document.createAttribute("id");//раздача id
 				att1.value = id[i];

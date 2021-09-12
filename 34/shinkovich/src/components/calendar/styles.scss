@@ -1,0 +1,12 @@
+.calendar {
+	background: rgb(227, 117, 165);
+	background: radial-gradient(circle, rgba(227, 117, 165, 1) 0%, rgba(148, 231, 233, 1) 100%);
+	padding: 20px;
+	border-radius: 32px;
+}
+
+.calendar__container {
+	margin-top: 200px;
+	display: flex;
+	justify-content: center;
+}
