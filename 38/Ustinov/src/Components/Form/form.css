@@ -1,0 +1,27 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 28px;
+  margin-top: 30px;
+  border: 1px solid black;
+  align-items: center;
+  padding: 30px;
+  background: khaki;
+}
+
+.inName {
+  width: 168px;
+}
+
+.inEmail {
+  width: 157px;
+}
+
+.btn {
+  width: 212px;
+  background: cornflowerblue;
+  border: none;
+  height: 25px;
+  cursor: pointer;
+}
