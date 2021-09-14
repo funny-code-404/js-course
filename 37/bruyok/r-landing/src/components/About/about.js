@@ -8,7 +8,7 @@ import build from "../../images/build.jpg";
 class About extends Component {
   render() {
     return (
-      <section className="about">
+      <section id="about" className="about">
         <div className="container">
           <div className="title about__title">
             OUR STORY

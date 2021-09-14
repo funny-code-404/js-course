@@ -4,12 +4,12 @@ import Bitmap1 from "../../images/Bitmap-1.png";
 import Bitmap2 from "../../images/Bitmap-2.png";
 import Bitmap3 from "../../images/Bitmap-3.png";
 
-import "./servises.css";
+import "./services.css";
 
-class Servises extends Component {
+class Services extends Component {
   render() {
     return (
-      <section className="servises">
+      <section id="services" className="servises">
         <div className="container">
           <div className="servises__title-block">
             <div className="title servises__title">
@@ -71,4 +71,4 @@ class Servises extends Component {
   }
 }
 
-export default Servises;
+export default Services;

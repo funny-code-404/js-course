@@ -13,9 +13,7 @@ class Footer extends Component {
               <div className="footer__company">
                 <h4 className="footer__title">COMPANY</h4>
                 <div className="logo footer__logo">
-                  <a href="#" class="logo__link">
-                    <img className="logo__img-white" src={logo} alt="logo" />
-                  </a>
+                  <img className="logo__img-white" src={logo} alt="logo" />
                 </div>
                 <p className="subtitle footer__subtitle">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
@@ -24,7 +22,7 @@ class Footer extends Component {
                 </p>
               </div>
 
-              <div className="footer__contact-us">
+              <div id="contact" className="footer__contact-us">
                 <div className=" footer__adress subtitle footer__subtitle">
                   <h4 className="footer__title">CONTACT US</h4>
                   213 Baker Street <br />

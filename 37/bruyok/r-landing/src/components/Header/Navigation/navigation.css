@@ -36,3 +36,11 @@
   color: #00a4e5;
   transition-duration: 0.5s;
 }
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}

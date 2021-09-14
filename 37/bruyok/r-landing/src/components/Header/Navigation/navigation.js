@@ -3,43 +3,27 @@ import { Component } from "react";
 import "./navigation.css";
 import logo from "../../../images/projeco-logo-black.png";
 
+import { navigationLinks } from "./menuList.config";
+
 class Navigation extends Component {
   render() {
+    const li = navigationLinks.map((link) => (
+      <li key={link.id} className="menu__list-item">
+        <a className="menu__link menu__link--active" href={link.href}>
+          {link.name}
+        </a>
+      </li>
+    ));
+
     return (
       <div className="header__navigation--border-bottom">
         <div className="container">
           <div className="header__nav-inner">
             <div className="logo">
-              <a href="#" class="logo__link">
-                <img class="logo__img-black" src={logo} alt="logo" />
-              </a>
+              <img class="logo__img-black" src={logo} alt="logo" />
             </div>
             <nav className="header__menu">
-              <ul className="menu__list">
-                <li className="header__menu-button menu__link--active">
-                  <i className="fas fa-bars"></i>
-                </li>
-                <li className="menu__list-item">
-                  {/* <a href="#" class="menu__link menu__link--active">
-                    home
-                  </a> */}
-                </li>
-                <li className="menu__list-item">
-                  {/* <a href="#" class="menu__link menu__link--active">
-                    about
-                  </a> */}
-                </li>
-                <li className="menu__list-item">
-                  {/* <a href="#" class="menu__link menu__link--active">
-                    services
-                  </a> */}
-                </li>
-                <li className="menu__list-item">
-                  {/* <a href="#" class="menu__link menu__link--active">
-                    contact
-                  </a> */}
-                </li>
-              </ul>
+              <ul className="menu__list">{li}</ul>
             </nav>
           </div>
         </div>

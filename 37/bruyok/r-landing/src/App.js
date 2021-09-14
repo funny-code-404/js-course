@@ -2,10 +2,11 @@
 import { Component } from "react";
 
 import "normalize.css";
+import "./index.css";
 
 import Header from "./components/Header/header";
 import About from "./components/About/about";
-import Servises from "./components/Servises/servises";
+import Services from "./components/Services/services";
 import Footer from "./components/Footer/footer";
 
 class App extends Component {
@@ -15,7 +16,7 @@ class App extends Component {
         <Header />
         <main>
           <About />
-          <Servises />
+          <Services />
         </main>
         <Footer />
       </div>
