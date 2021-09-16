@@ -1,0 +1,16 @@
+form {
+    width: 350px;
+
+}
+
+input {
+    margin-bottom: 15px;
+    width: 250px;
+}
+label {
+    margin-right: 15px;
+}
+
+.error {
+    color:red;
+}
