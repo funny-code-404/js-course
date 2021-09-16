@@ -1,0 +1,28 @@
+.avatar {
+	max-width: 304px;
+	border-radius: 15px;
+}
+
+.avatar__name {
+	background: linear-gradient(to left, #f69ec4, #f9dd94 100%);
+	background-position: 0 100%;
+	background-size: 100% 2px;
+	background-repeat: repeat-x;
+}
+
+.contacts__container {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+
+.contacts__container--1,
+.contacts__container--3 {
+	text-align: center;
+}
+
+.contacts__container--1 > h1,
+.contacts__container--2 > h1,
+.contacts__container--3 > h1 {
+	color: lightseagreen;
+}

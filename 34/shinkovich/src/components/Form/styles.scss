@@ -1,0 +1,10 @@
+.news__container--min {
+	display: flex;
+	justify-content: space-around;
+}
+.news__container--1,
+.news__container--2,
+.news__container--3 {
+	display: flex;
+	flex-direction: column;
+}
