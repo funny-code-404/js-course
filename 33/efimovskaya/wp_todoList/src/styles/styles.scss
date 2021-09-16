@@ -1,0 +1,371 @@
+@import "~normalize.css";
+@import "fonts.scss";
+
+$aqua: #0077c3;
+$blue: #026aa7;
+$dark-blue: #172b4d;
+$indigo: #6052db;
+$white-grey: #f4f5f7;
+$white-smoke: whitesmoke;
+$super-red: crimson;
+
+@mixin flexy-nav-left {
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+@mixin flexy-nav-right {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+@mixin round($width, $color) {
+  width: $width;
+  height: $width;
+  background: $color;
+  border-radius: $width/2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "My Custom font";
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  background: rgb(92, 92, 136);
+}
+
+body,
+button,
+html,
+input,
+select,
+textarea {
+  font-weight: 400;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: $white-smoke;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 20px 0 20px;
+}
+
+/* HEADER */
+
+.header {
+  color: $white-smoke;
+  height: 50px;
+  line-height: 50px;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__nav-left {
+  @include flexy-nav-left;
+}
+
+.header__nav-right {
+  @include flexy-nav-right;
+}
+
+.header__list .header__list-item {
+  display: inline;
+  list-style: none;
+}
+
+.fa-clipboard {
+  padding-right: 3px;
+}
+
+.fa-user-circle {
+  vertical-align: middle;
+  font-size: 26px;
+}
+
+.header__title-container {
+  display: flex;
+  align-items: center;
+}
+
+.header__title-container.fa-paste {
+  font-size: 24px;
+}
+
+.header__title {
+  font-size: 26px;
+  display: inline-block;
+}
+
+.header__list-item {
+  padding: 2px 3px 2px 5px;
+}
+
+.header__list-item,
+.board__list-item {
+  margin: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 20px;
+}
+
+.header__link {
+  padding: 15px 15px;
+}
+
+/* HEADER END */
+
+/* BOARD */
+
+.board-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: $aqua;
+}
+
+.board__main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fa-chevron-down {
+  padding-left: 7px;
+  font-size: 16px;
+}
+
+.fa-ellipsis-h {
+  font-size: 16px;
+}
+
+.fa-users,
+.fa-user-plus,
+.fa-ellipsis-h,
+.fa-bolt,
+.fa-clipboard {
+  padding-right: 10px;
+}
+
+.round {
+  @include round(50px, #123);
+}
+
+.board__header {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.board__list-item {
+  padding: 5px 20px 5px 20px;
+}
+
+.icon-clipboard-list:before {
+  content: "\e900";
+}
+
+.board__list .board__list-item {
+  display: inline;
+  list-style: none;
+}
+
+.board-canvas {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.board__card {
+  background: $white-smoke;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.board__card h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.board__card .board__card-input-field {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  height: 45px;
+}
+
+.board__card-input-field input {
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 17px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+}
+
+.board__card-input-field input:focus {
+  border-bottom-color: $indigo;
+}
+
+.board__card-input-field button {
+  width: 50px;
+  height: 100%;
+  border: none;
+  color: $white-smoke;
+  margin-left: 5px;
+  font-size: 21px;
+  outline: none;
+  background: $indigo;
+  cursor: pointer;
+  border-radius: 3px;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.board__card-input-field button:hover,
+.footer button:hover {
+  background: $indigo;
+}
+
+.board__card-input-field button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.board__card .board__card-todo-List {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.board__card-todo-List li {
+  position: relative;
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: 8px;
+  background: #ece9e9;
+  border-radius: 3px;
+  padding: 0 15px;
+  cursor: default;
+  overflow: hidden;
+}
+
+.board__card-todo-List li .board__card-icon {
+  position: absolute;
+  right: -45px;
+  background: $super-red;
+  width: 45px;
+  text-align: center;
+  color: $white-smoke;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.board__card-todo-List li:hover .board__card-icon {
+  right: 0px;
+}
+
+.board__card .board__card-container-for-button {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.board__card-container-for-button button {
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: $white-smoke;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 5px;
+  background: $indigo;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.board__card-container-for-button button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.board__card-input-field-filter input {
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 17px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  height: 45px;
+}
+
+.board__card-input-field-filter input:focus {
+  border-color: $indigo;
+}
+
+/* BOARD END */
