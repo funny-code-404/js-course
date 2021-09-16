@@ -1,0 +1,114 @@
+:root {
+  --white-color: #fff;
+  --river-bed: #48555b;
+  --cerulean: #00a4e5;
+  --alto: #d8d8d8;
+  --mercury: #e6e6e6;
+  --woodsmoke: #171819;
+  --dusty-gray: #979797;
+  --bunker: #141a20;
+  --curious-blue: #16ace8;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+/* Remove list styles on ul, ol elements with a class attribute */
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+label {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-js-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-jc-sb-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
