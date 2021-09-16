@@ -50,9 +50,9 @@ module.exports = {
       },
     }),
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({
+   new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
-    }),
+    }), 
   ],
   module: {
     rules: [
