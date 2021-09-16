@@ -1,0 +1,24 @@
+{
+  "name": "js-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbruyok/js-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nbruyok/js-course/issues"
+  },
+  "homepage": "https://github.com/nbruyok/js-course#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.0",
+    "babel-jest": "^27.0.6",
+    "jest": "^27.0.6"
+  }
+}
