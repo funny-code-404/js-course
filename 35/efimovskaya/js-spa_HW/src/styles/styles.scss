@@ -1,0 +1,69 @@
+@import "~normalize.css";
+@import "fonts.scss";
+
+body {
+  background: linear-gradient(45deg, #eecfba, #c5dde8);
+  font-family: "My Custom font";
+}
+a {
+  text-decoration: none;
+}
+
+#main {
+  margin: 20px 20px 0 20px;
+}
+
+button,
+input {
+  margin: 2px 2px 2px 5px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__container-for-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.block1,
+.block2 {
+  margin: 2px 2px 2px 5px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.card__container-for-buttons button:not(:first-child) {
+  margin-top: 20px;
+}
+
+.card__container-for-realization {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerBtn,
+.containerInpt,
+.containerBlk {
+  margin-top: 10px;
+}
+
+.containerInpt {
+  flex-wrap: wrap;
+}
+
+.button-del {
+  width: 150px;
+  height: 30px;
+  background-color: brown;
+  border-radius: 5px;
+}
