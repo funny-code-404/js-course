@@ -1,0 +1,39 @@
+/* Global Styles */
+
+html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    }
+  
+  img {
+      max-width: 100%;
+      display: block;
+    }
+  
+    button {
+      cursor: pointer;
+    }
+  
+    .container {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0 15px;
+    }
+  
+    :root {
+      --black: #000;
+      --dark:#141A20;
+      --marine:#00A4E5;
+      --grey:#48555B;
+      --light-grey:#E6E6E6;
+      --white:white;
+    }
+  
+    main,footer {
+      font-family: 'Open Sans';
+      color: var(--grey);
+    }
+  
