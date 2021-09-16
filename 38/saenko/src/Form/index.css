@@ -1,0 +1,17 @@
+form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin: 100px auto;
+}
+
+input {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+button {
+    height: 30px;
+    cursor: pointer;
+}
