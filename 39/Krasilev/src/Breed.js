@@ -20,7 +20,8 @@ const Breed = () => {
     setLoading(false);
   }, []);
 
-  async function getBreedImg(breed) {
+  async function getBreedImg(e, breed) {
+    breed = e.target.id;
     setLoading(true);
     try {
       const resp = await fetch(`https://dog.ceo/api/breed/${breed}/images`);
@@ -36,37 +37,21 @@ const Breed = () => {
     setLoading(false);
   }
 
-  const getAkitaImg = () => {
-    getBreedImg('akita');
-  };
-  const getChowImg = () => {
-    getBreedImg('chow');
-  };
-  const getBoxerImg = () => {
-    getBreedImg('boxer');
-  };
-  const getHuskyImg = () => {
-    getBreedImg('husky');
-  };
-  const getMixImg = () => {
-    getBreedImg('mix');
-  };
-
   return (
     <>
-      <button onClick={getAkitaImg} type="button">
+      <button id="akita" onClick={getBreedImg} type="button">
         Akita
       </button>
-      <button onClick={getChowImg} type="button">
+      <button id="chow" onClick={getBreedImg} type="button">
         Chow
       </button>
-      <button onClick={getBoxerImg} type="button">
+      <button id="boxer" onClick={getBreedImg} type="button">
         Boxer
       </button>
-      <button onClick={getHuskyImg} type="button">
+      <button id="husky" onClick={getBreedImg} type="button">
         Husky
       </button>
-      <button onClick={getMixImg} type="button">
+      <button id="mix" onClick={getBreedImg} type="button">
         Mix
       </button>
       {!loading && <img className="image" src={img} alt="Some dog breed" />}
