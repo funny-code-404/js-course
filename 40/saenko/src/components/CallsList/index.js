@@ -1,1 +1,3 @@
-export { default as CallsList } from './CallsList';
+import CallsList from "./CallsList";
+
+export default CallsList;

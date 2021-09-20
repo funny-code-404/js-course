@@ -1,1 +1,3 @@
-export { default as NameCard } from './NameCard';
+import NameCard from './NameCard';
+
+export default NameCard;

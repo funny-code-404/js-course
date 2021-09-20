@@ -1,11 +1,35 @@
-function ContactsList (props) {
-return (
+import { contacts } from "./config";
+import { Link } from "react-router-dom";
+import "./index.css";
+
+const ContactsList = () => {
+  return (
     <ul className="contacts-list">
-        {props.contacts.map((contact) =>
-            <li key={contact.id}><h3>{contact.name}</h3><p>{contact.phone}</p></li>
-        )}
+      {contacts.map((contact) => (
+        <li key={contact.id}>
+          <Link
+            to={{
+              pathname: `/:${contact.name}`,
+              contact: { contact },
+              friends: contacts,
+            }}
+          >
+            {contact.name}
+          </Link>
+          <span> </span>
+          <Link
+            to={{
+              pathname: `/:${contact.name}/:${contact.phone}`,
+              contact: { contact },
+              friends: contacts,
+            }}
+          >
+            {contact.phone}
+          </Link>
+        </li>
+      ))}
     </ul>
-);
-}
+  );
+};
 
 export default ContactsList;
