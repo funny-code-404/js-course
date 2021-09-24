@@ -14,13 +14,19 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch('https://dog.ceo/api/breeds/image/random')
-      .then((dog) => dog.json())
-      .then((dog) => {
-        this.setState({
+    this.getRandomDog();
+  }
+
+  getRandomDog = async () => {
+    try {
+      const resp = await fetch('https://dog.ceo/api/breeds/image/random');
+      const dog = await resp.json();
+      this.setState({
          image: dog.message
         });
-      });
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   async getDogImg(breed) {

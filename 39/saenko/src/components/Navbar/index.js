@@ -1,5 +1,6 @@
 import React from "react";
 import './index.css';
+import { breeds } from "./config";
 
 class Navbar extends React.Component {
     constructor (props) {
@@ -17,12 +18,10 @@ class Navbar extends React.Component {
     render () {
         return(
             <nav>
-                <ul className="nav-list">
-                    <li className="nav-item"><button className="nav-btn" id="akita" onClick={this.handleClick}>Akita</button></li>
-                    <li className="nav-item"><button className="nav-btn" id="chow" onClick={this.handleClick}>Chow</button></li>
-                    <li className="nav-item"><button className="nav-btn" id="boxer" onClick={this.handleClick}>Boxer</button></li>
-                    <li className="nav-item"><button className="nav-btn" id="husky" onClick={this.handleClick}>Husky</button></li>
-                    <li className="nav-item"><button className="nav-btn" id="mix" onClick={this.handleClick}>Mix</button></li>
+                <ul className="nav-list" onClick={this.handleClick}>
+                    {breeds.map((breed) => {
+                        return <li className="nav-item"><button className="nav-btn" id={breed.id}>{breed.breed}</button></li>
+                    })}
                 </ul>
             </nav>
         );
