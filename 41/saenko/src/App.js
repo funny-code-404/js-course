@@ -1,9 +1,14 @@
 import './App.css';
+import List from './components/List';
+import Form from './components/Form';
+import TodoListContextProvider from './containers/contextProvider';
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <TodoListContextProvider>
+      <List />
+      <Form />
+    </TodoListContextProvider>
   );
 }
 
