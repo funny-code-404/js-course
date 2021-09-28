@@ -1,0 +1,32 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  max-width: 300px;
+  height: 30px;
+  margin-top: 15px;
+  background: rgb(148, 175, 175);
+  border-radius: 5px;
+}
+
+button {
+  margin: 10px;
+  max-width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  background: rgb(72, 72, 107);
+  color: white;
+}
+
+textarea {
+  width: 400px;
+  height: 150px;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row;
+  vertical-align: end;
+}
