@@ -1,28 +1,12 @@
 import React from "react";
 
 class Photo extends React.Component {
-  // randomDogUrl = "https://dog.ceo/api/breeds/image/random"
-  // breedRandomUrl = "https://dog.ceo/api/breed/${breedName}/images/random"
-  constructor(props) {
-    super(props);
-    this.state = {
-      randomDogUrl: "",
-    };
-  }
-
-
   async componentDidMount() {
-    fetch("https://dog.ceo/api/breeds/image/random")
-      .then((res) => res.json())
-      .then((result) => {
-        this.setState({
-          randomDogUrl: result.message,
-        })
-      });
+    await this.props.fetchRandomDog("https://dog.ceo/api/breeds/image/random");
   }
 
   render() {
-    return <img src={this.state.randomDogUrl}  alt="dog" ></img>;
+    return <img src={this.props.url} alt="dog"></img>;
   }
 }
 

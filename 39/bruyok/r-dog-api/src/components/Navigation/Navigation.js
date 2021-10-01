@@ -10,8 +10,15 @@ class Navigation extends React.Component {
       <nav className="menu">
         <ul className="menu__list">
           {breedNames.map((breed) => (
-            <li key={breed.id} className="menu__list-item">
-              <button className="menu__button menu__button--active">
+            <li
+              key={breed.id}
+              className="menu__list-item"
+              onClick={this.props.handleClick}
+            >
+              <button
+                className="menu__button menu__button--active"
+                name={breed.name}
+              >
                 {breed.name}
               </button>
             </li>
