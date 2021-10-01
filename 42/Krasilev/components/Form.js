@@ -9,15 +9,6 @@ const Form = () => {
   const [buttonID, setButtonID] = useState('')
   let todoList = useContext(TodoContext);
 
-  const todoReducer = (state, action) => {
-    if(action.type === 'NEW_TODO') {
-      return [...state, {title: inputValue}]
-    }
-    if(action.type === 'REMOVE_TODO') {
-      return state.filter(item => item.title !== buttonID)
-    }
-    return state;
-  }
 
   const initialState = todoList;
 
