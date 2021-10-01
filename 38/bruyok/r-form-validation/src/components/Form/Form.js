@@ -17,7 +17,7 @@ class Form extends React.Component {
   handleChange = (event) => {
     const { name, value } = event.target;
 
-    let errors = this.state.errors;
+    let { errors } = this.state;
 
     switch (name) {
       case "name":
