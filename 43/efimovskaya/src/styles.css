@@ -1,0 +1,51 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  background: #471525; 
+ 
+  color: #ffffffa6;
+  font-family: "Roboto", sans-serif;
+}
+
+input {
+  background: border-box;
+  color: #ffffffa6;
+  border-top: none;
+  width: 200px;
+  padding: 5px;
+}
+
+button {
+  background: content-box;
+  color: #ffffffa6;
+  border: none;
+}
+
+.button {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 0 auto;
+  height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+.todos-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #ffffffa6;
+  padding: 5px;
+  cursor: pointer;
+
+}
