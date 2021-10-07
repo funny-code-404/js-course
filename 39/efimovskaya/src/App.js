@@ -4,30 +4,29 @@ import Image from "./components/Image/Image";
 
 
 class App extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
 
     this.state = {
-      // isOpen: true,
-      //data: [],
     };
 
     this.getImageOfRandomDog = this.getImageOfRandomDog.bind(this);
   }
-  // https://dog.ceo/api/breed/${breedName}/images/random
+  
+   componentDidMount() {
+    this.getRandomDog();
+  }
 
-  componentDidMount() {
+
+  getRandomDog = async () => {
     try {
-     fetch("https://dog.ceo/api/breeds/image/random")
-      .then((dog) => dog.json())
-      .then((dog) => {
-        this.setState({
-          image: dog.message,
+      const resp = await fetch('https://dog.ceo/api/breeds/image/random');
+      const dog = await resp.json();
+      this.setState({
+         image: dog.message
         });
-      });
-    }
-    catch(error) {
-      console.log(error)
+    } catch (error) {
+      console.log(error);
     }
   }
 
@@ -38,7 +37,6 @@ class App extends React.Component {
       throw new Error();
     }
   
-
     const data = await response.json();
     this.setState({
       image: data.message,
