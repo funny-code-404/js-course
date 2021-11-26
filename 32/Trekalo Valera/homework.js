@@ -1,17 +1,18 @@
+const message = "Not correct arguments";
 export function getValue(a) {
   return a;
 }
 
 export function substract(a, b) {
   if (!typeof a == "number" || isNaN(a) || isNaN(b) || !typeof b == "number") {
-    return "Not correct arguments";
+    return message;
   }
   return a - b;
 }
 
 export function quotient(a, b) {
   if (!typeof a == "number" || isNaN(a) || isNaN(b) || !typeof b == "number") {
-    return "Not correct arguments";
+    return message;
   }
   return a / b;
 }
@@ -23,7 +24,7 @@ export function randomInRage(min, max) {
     isNaN(max) ||
     !typeof max == "number"
   ) {
-    return "Not correct arguments";
+    return message;
   }
   return Math.floor(Math.random() * (max - min) + min);
 }
@@ -41,7 +42,7 @@ export function invitation(user) {
 }
 
 export function copyArray(arr) {
-  if (!Array.isArray(arr)) return "Not correct arguments";
+  if (!Array.isArray(arr)) return message;
   return arr.slice(0);
 }
 

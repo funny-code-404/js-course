@@ -14,9 +14,15 @@ import {
   arrayToObject,
   sum,
   makeAction,
-} from "../hometask";
+} from "../homework";
 
-const message = "Not correct arguments";
+let message = 'blabla';
+beforeEach(() => {
+  message = "Not correct arguments";
+});
+afterEach(() => {
+  message = 'blabla';
+});
 
 test("get value", () => {
   expect(getValue(10)).toBe(10);
@@ -32,7 +38,7 @@ test("substract", () => {
 
 test("quotient", () => {
   expect(quotient(2, 2)).toBe(1);
-  expect(quotient("blabla", 100)).toEqual(message);
+  expect(quotient("blabla", 100)).toBe(message);
   expect(quotient(22, 2)).toBe(11);
 });
 
@@ -43,12 +49,12 @@ test("randomInRage", () => {
 });
 
 test("capitalize", () => {
-  expect(capitalize("developer")).toEqual("Developer");
+  expect(capitalize("developer")).toBe("Developer");
 });
 
 test("arrayToString", () => {
-  expect(arrayToString([1, 2, 3, 4, 6], "")).toEqual("12346");
-  expect(arrayToString([2, 3, 2, 3, 2, 3], "-")).toEqual("2-3-2-3-2-3");
+  expect(arrayToString([1, 2, 3, 4, 6], "")).toBe("12346");
+  expect(arrayToString([2, 3, 2, 3, 2, 3], "-")).toBe("2-3-2-3-2-3");
 });
 
 test("invitation", () => {
@@ -56,13 +62,13 @@ test("invitation", () => {
     name: "Valera",
     age: 23,
   };
-  expect(invitation(obj)).toEqual("Hello! My name is Valera. I am 23");
+  expect(invitation(obj)).toBe("Hello! My name is Valera. I am 23");
 });
 
 test("copyArray", () => {
   const arr = [1, 2, 3, 4, 5];
   expect(copyArray(arr)).toEqual([1, 2, 3, 4, 5]);
-  expect(copyArray()).toEqual(message);
+  expect(copyArray()).toBe(message);
 });
 
 test("copyObject", () => {
@@ -71,8 +77,8 @@ test("copyObject", () => {
     age: 23,
   };
   expect(copyObject(obj)).toEqual({ name: "Valera", age: 23 });
-  expect(copyObject([])).toEqual(message);
-  expect(copyObject("asd")).toEqual(message);
+  expect(copyObject([])).toBe(message);
+  expect(copyObject("asd")).toBe(message);
 });
 
 test("objectToArray", () => {
@@ -105,12 +111,12 @@ test("arrayToObject", () => {
 });
 
 test("sum", () => {
-  expect(sum(1)(2)).toEqual(3);
+  expect(sum(1)(2)).toBe(3);
 });
 
 test("makeAction", () => {
   const foo = (c, d) => {
     return c + d;
   };
-  expect(makeAction(foo, 2, 4)).toEqual(6);
+  expect(makeAction(foo, 2, 4)).toBe(6);
 });
