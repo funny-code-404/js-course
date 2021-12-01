@@ -1,0 +1,19 @@
+@import "./avatar/avatar.scss";
+@import "./bio/bio.scss";
+@import "./info/info.scss";
+@import "./sign/sign.scss";
+body{
+   margin: 0 auto;
+   max-width: 600px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-areas: 'avatar bio'
+                        'info info'
+                        'sign sign';
+                        grid-gap: 10px;
+}
+
+
+
+
