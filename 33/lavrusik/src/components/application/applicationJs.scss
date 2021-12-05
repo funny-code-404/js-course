@@ -1,0 +1,136 @@
+.orderPizza {
+	border: 3px solid rgb(0, 89, 255);
+	min-width: 100px;
+	min-height: 100px;
+	background-color: #F29D42;
+	span {
+		font-size: 25px;
+		color: gray;
+	}
+}
+.img_pizza_part1,
+.img_pizza_part2 {
+	top: 10px;
+	opacity: 0;
+}
+.img_pizza_part3,
+.img_pizza_part4 {
+	opacity: 0;
+}
+dialog {
+	text-align: center;
+	font-size: 40px;
+	position: absolute;
+	margin: 200px auto;
+	width: 400px;
+	height: 250px;
+	border-radius: 20px;
+	background: rgb(197, 175, 175);
+.btn_close {
+	margin-top: 40px;
+	width: 150px;
+	height: 50px;
+	border-radius: 20px;
+}
+p {
+	margin-top: 50px;
+}
+}
+.image_pizza {
+	background-color:rgb(109, 102, 102);
+	text-align: center;
+	display: grid;
+	grid-template-columns: 170px 170px;
+	grid-template-rows: 170px 170px;
+	img {
+		left: 20px;
+		width: 170px;
+		position: relative;
+	}
+}
+ul {
+	padding: 10px 70px;
+	
+}
+.applicationJs {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1100px;
+	grid-gap: 10px;
+	background-color:rgb(109, 102, 102);
+	display: grid;
+	grid-template-areas: 'order list'
+						'order list'
+						'button list';
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 4fr 3fr 1fr;
+}
+.button-wrapper {
+	grid-area: button;
+	margin: auto auto;
+	.btn{
+		border-radius: 10px;
+		padding: 20px 20px;
+		font-size: 30px;
+		width: 350px;
+		height: 80px;
+		color: gray;
+		background-color: #F29D42;
+		border: none;
+		&:hover {
+			cursor: pointer;
+			background-color:rgba(255,106,0,1) ;
+		}
+	}
+}
+.order {
+	grid-area: order;
+}
+li {
+	list-style-type: none;	
+	&:hover{
+		cursor: pointer;
+		color: red;
+	}	
+}
+.img_pizza {
+	width: 200px;
+}
+.listOrderPizza {
+	color: gray;
+		li {
+			font-size: 25px;
+			color: gray;
+			width: 170px;	
+		}
+}
+.pizzaPart {
+	h3 {
+		margin-top: 15px;
+		font-size: 25px;
+		color: gray;
+	}
+	text-align: center;
+	grid-gap: 10px;
+	grid-area: list;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	li {
+		font-size: 25px;
+		color: gray;
+		width: 170px;
+		padding: 20px 20px;
+		border: 1px solid gray;
+	}
+	.activ {
+		background-color: rgba(255,106,0,0.44);
+		color: white;
+	}
+}
+.ing1_wrapper,
+.ing2_wrapper,
+.osnova_wrapper,
+.sauce_wrapper {
+	background-color: #F29D42;
+}
