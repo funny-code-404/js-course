@@ -1,0 +1,10 @@
+$margin: 0 auto;
+body{
+    max-width: 1000px;
+    margin: $margin;
+    box-sizing: border-box;
+
+    #container{
+        position: relative;
+    }
+}
