@@ -10,7 +10,7 @@ module.exports = {
   },
   mode: "production",
   output: {
-    filename: "[name].[contenthash].bundle.js",
+    filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
   plugins: [

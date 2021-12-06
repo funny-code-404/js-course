@@ -1,6 +1,8 @@
-import "./total.scss";
-import { createSrcImg } from "./module/avatar/index.js";
+import App from './App'
+import './styles/styles.scss'
 
-const avatar = document.getElementById('avatar')
 
-createSrcImg(avatar);
+
+
+
+const app = new App(document.getElementById('main'));
