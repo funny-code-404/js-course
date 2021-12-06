@@ -1,0 +1,22 @@
+@import "~normalize.css";
+
+
+body {
+  font-family: monospace;
+}
+
+.wrapper {
+  border: 1px solid #696969;
+  margin: 5px;
+}
+
+.imgAndInfoWrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dateAndSignWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
