@@ -1,0 +1,13 @@
+@import "~normalize.css";
+@import "./avatar/style.scss";
+@import "./infoPerson/style.scss";
+@import "./sign/style.scss";
+@import "./autobiography/style.scss";
+
+.root {
+  margin: 0 auto;
+  border: 1px solid black;
+  max-width: 800px;
+  margin-top: 50px;
+  background-color: #fff;
+}
