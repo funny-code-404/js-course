@@ -1,23 +1,30 @@
 import { main } from "../../app";
+import { getAllPosts } from "./services/api/postsApi";
+import { clickSinglePost } from "./services/helper/clickSinglePost";
 class Data{
 	constructor() {
 		return this.init();
 	}
 	init() {
-		return this.render();
+		this.render();
 	}
 	async render() {
-		let dataInfo = await fetch('https://jsonplaceholder.typicode.com/posts');
-		let data = await dataInfo.json();
+		const data = await getAllPosts();
 		const article = document.createElement('article');
 		article.className = 'data';
-		Object.keys(data).forEach((item) => {
+		article.id = 'dataBlock';
+		data.forEach((item) => {
 			const div = document.createElement('div');
-			Object.keys(data[item]).forEach((key) => {
+			Object.keys(item).forEach((key) => {
 				const p = document.createElement('p');
-				p.innerText = `${key}: ${data[item][key]}`
-				div.appendChild(p);
-			})
+				p.innerText = `${key}: ${item[key]}`;
+				div.appendChild(p);	
+			});
+			const button = document.createElement('button');
+			button.addEventListener('click', clickSinglePost);
+			button.innerText = 'Show post';
+			button.id = item.id;
+			div.appendChild(button);
 			article.appendChild(div);
 		})
 		main.appendChild(article);
