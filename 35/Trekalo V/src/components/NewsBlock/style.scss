@@ -1,0 +1,134 @@
+.active {
+    color: rgb(235, 238, 238);
+    cursor: pointer;
+}
+
+
+.wrapper {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    max-width:1140px;
+    margin: 0 auto;
+    background: rgb(158, 137, 137);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+};
+
+.order {
+    display: flex;
+    // flex-wrap: wrap;
+    >.order__left {
+        flex-basis: 50%;
+        background-color: rgb(223, 147, 61);
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        >.order__price {
+            margin-left: 50px;
+            font-size: 1.3em;
+            margin-bottom: 55px;
+        }
+        
+        >.order__info{
+            margin-left: 50px;
+            margin-top: 50px;
+
+            > .order__list {
+                list-style: none;
+                margin-top: 20px;
+                font-size: 1.2em;
+                >li {
+                    line-height: 25px;
+                }
+            }
+            >.order__title {
+                font-size: 1.5em;
+                font-weight: 600;
+
+            }
+        }
+    }
+    >.order__right{
+        flex-basis: 50%;
+        background-color: rgb(218, 178, 132);
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        // >.img_block {
+            // >img {
+            //     width: 250px;
+            //     height: 250px;
+            // }
+        // }
+        >*{
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        
+    }
+};
+
+.btn {
+    border: none ;
+    color: bisque;
+    border-radius: 2em;
+    font-size: 2em;
+    font-weight: 600;
+    padding: 10px 60px;
+    background-color: rgb(233, 196, 34);
+    color: black;
+    border: 2px solid #fff;
+}
+
+
+.order__btn {
+        &:hover {
+            background-color: rgb(192, 77, 48);
+            color: #fff;
+        }
+}
+
+
+
+.ingredients {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: rgb(211, 161, 96);
+    >*{
+        >h3 {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 25px;
+            // border-bottom: 3px solid red;
+            margin-bottom: 10px;
+        }
+        
+        >ul {
+            > li {
+                font-size: 1.1em;
+                line-height: 25px;
+            }
+            >li:hover {
+                color: rgb(235, 238, 238);
+                cursor: pointer;
+            }
+            
+        }
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+    

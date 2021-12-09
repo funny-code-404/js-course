@@ -1,0 +1,132 @@
+.active {
+  color: #ebeeee;
+  cursor: pointer;
+}
+
+.wrapper {
+  color: black;
+  font-size: 15px;
+  max-width: 1140px;
+  margin: 0 auto;
+  background: #9e8989;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.order > .order__left {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background-color: #df933d;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.order > .order__left > .order__price {
+  margin-left: 50px;
+  font-size: 1.3em;
+  margin-bottom: 55px;
+}
+
+.order > .order__left > .order__info {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.order > .order__left > .order__info > .order__list {
+  list-style: none;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.order > .order__left > .order__info > .order__list > li {
+  line-height: 25px;
+}
+
+.order > .order__left > .order__info > .order__title {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.order > .order__right {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background-color: #dab284;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.order > .order__right > * {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.btn {
+  border: none;
+  color: bisque;
+  border-radius: 2em;
+  font-size: 2em;
+  font-weight: 600;
+  padding: 10px 60px;
+  background-color: #e9c422;
+  color: black;
+  border: 2px solid #fff;
+}
+
+.order__btn:hover {
+  background-color: #c04d30;
+  color: #fff;
+}
+
+.ingredients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 0;
+  background-color: #d3a160;
+}
+
+.ingredients > * > h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.ingredients > * > ul > li {
+  font-size: 1.1em;
+  line-height: 25px;
+}
+
+.ingredients > * > ul > li:hover {
+  color: #ebeeee;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
