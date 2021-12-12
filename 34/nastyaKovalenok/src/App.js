@@ -1,12 +1,14 @@
 import CVPage from "./components/CVPage";
 import RequestPage from "./components/requestPage";
 import AuthorizationPage from "./authorizationForm";
+import DataBlock from "./components/dataBlock";
 import "./style.css"
 
 const APP_ROUTES = {
     CV: 'CV',
     form: 'form',
-    request: 'request'
+    request: 'request',
+    comments: 'comments'
 };
 
 class App {
@@ -48,7 +50,11 @@ class App {
     }
 
     renderRequestPage(container) {
-        const requestPage = new RequestPage(container)
+        new RequestPage(container)
+    }
+
+    renderCommentsPage(container){
+        new DataBlock(container)
     }
 
     init(container) {
@@ -72,6 +78,9 @@ class App {
                 break;
             case APP_ROUTES.request:
                 this.renderRequestPage(elDiv);
+                break;
+            case APP_ROUTES.comments:
+                this.renderCommentsPage(elDiv);
                 break;
         }
         container.innerText = '';
