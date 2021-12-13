@@ -1,1 +1,1 @@
-export const baseURL = "https://jsonplaceholder.typicode.com";
+export const baseURL = "https://quiet-spire-94328.herokuapp.com/reviews";

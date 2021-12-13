@@ -1,60 +1,52 @@
-import {
-  getAllComments,
-  getSingleComment,
-} from "../../services/api/commentsApi";
+import { getAllReviews, deleteReview } from "../../services/api/reviewsApi";
+import { wrapperResponse } from "../Form/index";
 import "./styles.scss";
+
 class DataBlock {
   constructor(container) {
     this.init(container);
   }
 
-  init(container) {
-    this.render(container);
+  async init(container) {
+    const data = await getAllReviews();
+    console.log(data);
+    this.render(container, data);
   }
 
-  async renderLi(container) {
-    // можно вынести, т.к. не использует THIS
-    const info = await getAllComments();
-    info.splice(50, 450);
-    info.map(({ email, id }) => {
-      const li = document.createElement("li");
-      li.classList.add("email");
-      li.innerHTML = `${email}`;
-      this.renderButton(li, id);
-      container.appendChild(li);
-    });
-  }
-
-  renderButton(container, id) {
-    // можно вынести, т.к. не использует THIS
-    const button = document.createElement("button");
-    button.innerHTML = "Fetch button";
-    button.id = id;
-    button.classList.add("button");
-    container.appendChild(button);
-
-    button.addEventListener("click", async (e) => {
-      const data = await getSingleComment(e.target.id);
-      console.log(data);
-      this.createUserInfoById(container, data);
-    });
-  }
-
-  createUserInfoById(container, info) {
-    // можно вынести, т.к. не использует THIS
-    const span = document.createElement("span");
-    span.innerHTML = `id: ${info.id}, something text: ${info.name}`;
-    span.classList.add("info_span");
-    if (
-      ![...container.children].find((item) => item.className === "info_span")
-    ) {
-      container.appendChild(span);
-    }
-  }
-
-  render(container) {
+  render(container, data) {
     const ul = document.createElement("ul");
-    this.renderLi(ul);
+
+    data.forEach((item) => {
+      const li = document.createElement("li");
+
+      const name = document.createElement("h1");
+      const email = document.createElement("h2");
+      const review = document.createElement("p");
+      const button = document.createElement("button");
+
+      name.innerHTML = item.name;
+      email.innerHTML = item.email;
+      review.innerHTML = item.review;
+      button.innerHTML = "x";
+      button.id = item.id;
+
+      li.appendChild(name);
+      li.appendChild(email);
+      li.appendChild(review);
+      li.appendChild(button);
+
+      ul.appendChild(li);
+    });
+
+    ul.addEventListener("click", async (e) => {
+      if (e.target.tagName === "BUTTON") {
+        await deleteReview(e.target.id);
+        wrapperResponse.innerHTML = "";
+        new DataBlock(wrapperResponse);
+      }
+      return;
+    });
+
     container.appendChild(ul);
   }
 }

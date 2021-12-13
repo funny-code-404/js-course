@@ -1,7 +1,8 @@
 export const APP_ROUTES = {
   news: "news",
   about: "about",
-  data: "data",
+  // data: "data",
+  contacts: "contacts",
 };
 
 class Nav {
