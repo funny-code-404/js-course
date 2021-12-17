@@ -1,0 +1,9 @@
+.logo {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: black;
+}
