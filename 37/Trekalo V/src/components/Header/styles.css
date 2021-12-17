@@ -1,0 +1,24 @@
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 1px solid black;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url(http://c.files.bbci.co.uk/116AB/production/_115093317_neo4.jpg); */
+  background-image: url("/src/assets/pexels-photo-356056.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.835);
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
