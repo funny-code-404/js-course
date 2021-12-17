@@ -1,0 +1,10 @@
+.sign{
+   border: 3px solid red;
+   width: 400px;
+   height: 30px;
+   grid-area: sign;
+   display: inline-block;
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+}

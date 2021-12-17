@@ -1,0 +1,6 @@
+export const createInfo = () => {
+  const info = document.createElement('span');
+  info.className='info';
+	info.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloremque repellat accusamus distinctio soluta provident atque autem molestias nulla quae consequuntur alias aut, sapiente ullam necessitatibus assumenda dolores magnam sit dicta, inventore est expedita qui. Culpa, quo aperiam in corporis ullam fugit rerum exercitationem assumenda ratione amet? Quibusdam facere inventore laudantium, quod eius cumque alias laboriosam praesentium quae repellat repellendus maiores est at modi temporibus velit soluta maxime tempore nesciunt nostrum quis dolor asperiores blanditiis rem? Corrupti, mollitia dicta molestias cupiditate nemo aperiam rem delectus eligendi natus similique impedit hic repellat necessitatibus reprehenderit nihil dignissimos dolor deleniti assumenda eos doloremque qui modi? Velit consequatur iste iusto sed similique nesciunt quod, distinctio veniam hic earum rem nihil possimus accusantium? Exercitationem unde libero!';
+	return info;
+}
