@@ -1,0 +1,10 @@
+class Bio {
+   createBio() {
+      const p = document.createElement("p");
+      p.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fugiat consequuntur dolore voluptas debitis officiis dolorum sit soluta adipisci, quae repudiandae amet quos tenetur consequatur vero ea, facilis, et enim earum perspiciatis explicabo maxime nihil? Nostrum, dolore? Blanditiis tempore nostrum, laboriosam error dignissimos, quo vero aspernatur, necessitatibus nesciunt accusamus quae? Eveniet vitae earum non eum saepe accusamus beatae. Rerum placeat minima natus, deleniti aut est reiciendis quas neque officia harum recusandae. Corrupti numquam nulla et ratione quia odit ipsam fuga possimus dignissimos, officia repellendus quidem consequuntur doloremque unde porro voluptas inventore dolor fugiat laudantium quos tempora? Sint at nostrum nihil et. Error nostrum deserunt corrupti illo id? Vel ullam eligendi unde voluptates iusto neque commodi eos consequatur rerum, libero dolorum labore iste quis officia voluptatibus quibusdam recusandae voluptas vero delectus exercitationem laboriosam nulla ut alias at? Illo aut eaque sed modi, sunt adipisci eum vel error repellat debitis blanditiis officiis, inventore doloribus. Harum mollitia unde veritatis provident, rerum neque beatae dolorem minima ratione omnis ipsum, iusto ex animi illo quaerat fugiat nobis totam consequatur sint error. Vitae amet cumque repudiandae tempore placeat error. Suscipit praesentium cumque, quam voluptatum incidunt nisi quos? Facilis placeat, iste in consequatur, accusantium qui quidem sunt voluptates quas dignissimos doloribus, assumenda voluptate. Repellat eaque, quisquam dolor odit ut eum eos nulla quos, perspiciatis eveniet mollitia maxime illum ratione eligendi sapiente. Sint, delectus excepturi odio cupiditate perferendis provident suscipit quo nulla voluptates pariatur placeat. Eius, explicabo sapiente quasi placeat natus atque quisquam cumque! Aperiam officia aut praesentium!";
+      p.classList.add("bio");
+      document.body.append(p);
+   }
+}
+
+export const bio = new Bio();
