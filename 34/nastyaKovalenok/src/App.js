@@ -2,13 +2,15 @@ import CVPage from "./components/CVPage";
 import RequestPage from "./components/requestPage";
 import AuthorizationPage from "./authorizationForm";
 import DataBlock from "./components/dataBlock";
+
 import "./style.css"
 
 const APP_ROUTES = {
     CV: 'CV',
     form: 'form',
     request: 'request',
-    comments: 'comments'
+    comments: 'comments',
+
 };
 
 class App {
@@ -57,6 +59,8 @@ class App {
         new DataBlock(container)
     }
 
+
+
     init(container) {
         window.onhashchange = () => {
             this.render(container)
@@ -82,6 +86,8 @@ class App {
             case APP_ROUTES.comments:
                 this.renderCommentsPage(elDiv);
                 break;
+
+
         }
         container.innerText = '';
        container.append(elDiv)
