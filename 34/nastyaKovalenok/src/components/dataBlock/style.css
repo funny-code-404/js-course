@@ -1,0 +1,12 @@
+.main-dive{
+    position: relative;
+}
+
+.main-dive li{
+    line-height: 30px;
+}
+.openDetails{
+    position: absolute;
+    right: 10px;
+
+}
