@@ -1,0 +1,8 @@
+@import '~normalize.css';
+
+body {
+  background-color: rgb(67, 32, 95);
+  padding: 40px;
+  color: white;
+  font-size: 20px;
+}
