@@ -2,15 +2,18 @@ import CVPage from "./components/CVPage";
 import RequestPage from "./components/requestPage";
 import AuthorizationPage from "./authorizationForm";
 import DataBlock from "./components/dataBlock";
-
+import observer from "./utils/observer";
+import {DATA_RECEIVED} from "./events";
+import Form from "./components/Form";
 import "./style.css"
+
 
 const APP_ROUTES = {
     CV: 'CV',
     form: 'form',
     request: 'request',
     comments: 'comments',
-
+    contacts: 'contacts',
 };
 
 class App {
@@ -59,12 +62,19 @@ class App {
         new DataBlock(container)
     }
 
-
+    renderContactsBlock(container){
+        new Form(container)
+    }
 
     init(container) {
         window.onhashchange = () => {
             this.render(container)
         }
+
+        observer.subscribe(DATA_RECEIVED, (state)=>{
+            console.log('STATE DATA', state)
+        })
+
         return this.render(container)
     }
 
@@ -86,12 +96,12 @@ class App {
             case APP_ROUTES.comments:
                 this.renderCommentsPage(elDiv);
                 break;
-
-
+            case APP_ROUTES.contacts:
+                this.renderContactsBlock(elDiv);
+                break;
         }
         container.innerText = '';
        container.append(elDiv)
-
     }
 }
 

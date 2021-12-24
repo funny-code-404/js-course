@@ -3,3 +3,5 @@ export const commentsDataFromServer = (response) =>
         ...item,
         text: body
     }));
+
+export const reviewsDataFromServer = ({data}) => data?.reviews;
