@@ -27,7 +27,7 @@ const dogsArr = [
 
 function NavItemMaker(arr, func) {
   //TODO: в отдельный компонент
-  arr.map((dog) => (
+  return arr.map((dog) => (
     <div key={dog.id} className="dogs" onClick={() => func(dog.id)}>
       {dog.name}
     </div>
