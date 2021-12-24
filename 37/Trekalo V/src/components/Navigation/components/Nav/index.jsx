@@ -1,15 +1,19 @@
 import React from "react";
+import { navItems } from "../Search/constants";
 import "./styles.css";
+
+function NavItemMaker() {
+  return navItems.map((item) => (
+    <div key={item.id} className="nav_item">
+      {item.name}
+    </div>
+  ));
+}
 
 export function Nav() {
   return (
     <div className="nav">
-      <div className="nav_item">About</div>
-      <div className="nav_item">Servicing</div>
-      <div className="nav_item">Portfodivo</div>
-      <div className="nav_item">Home</div>
-      <div className="nav_item">Contact us</div>
-      <div className="nav_item">Blog</div>
+      <NavItemMaker />
     </div>
   );
 }
