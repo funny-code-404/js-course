@@ -1,13 +1,14 @@
-const ArticleCardSkill = ({imgCardSkill}) => {
-    return (
+import {SKILL_HEADER, TEXT_LOREM} from "../../constants";
+
+const ArticleCardSkill = ({imgCardSkill}) =>
+    (
         <article className="card__skill">
             <img src={imgCardSkill} alt="skill"/>
-            <article className="card__skill__header">PROJECT AND CONSTRUCTION MANAGEMENT</article>
-            <article className="card__skill__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+            <article className="card__skill__header">{SKILL_HEADER}</article>
+            <article className="card__skill__text">{TEXT_LOREM}
             </article>
         </article>
     )
-}
+
 
 export default ArticleCardSkill
