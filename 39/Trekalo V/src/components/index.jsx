@@ -25,15 +25,6 @@ const dogsArr = [
   },
 ];
 
-function NavItemMaker(arr, func) {
-  //TODO: в отдельный компонент
-  return arr.map((dog) => (
-    <div key={dog.id} className="dogs" onClick={() => func(dog.id)}>
-      {dog.name}
-    </div>
-  ));
-}
-
 export function Navigation() {
   const [source, setSource] = useState("");
 
@@ -44,16 +35,24 @@ export function Navigation() {
 
     setSource(image);
   };
-
-  const CloserToNav = () => NavItemMaker(dogsArr, addImage); //TODO: плохое название функции
+  const closerToNav = () => {
+    //TODO:
+    return NavItemMaker(dogsArr, addImage);
+  };
 
   return (
     <div>
-      <div className="wrapper">
-        <CloserToNav />
-      </div>
+      <div className="wrapper"> {closerToNav()}</div>
       {!source && <p className="title">Click and dog will load</p>}
       {source && <img className="image" src={source} alt="" />}
     </div>
   );
 }
+
+const NavItemMaker = (arr, func) => {
+  return arr.map((dog) => (
+    <div className="dogs" key={dog.id} onClick={() => func(dog.id)}>
+      {dog.name}
+    </div>
+  ));
+};
