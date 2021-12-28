@@ -1,0 +1,20 @@
+h6 {
+  font-family: Chivo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+
+p {
+  font-family: Chivo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.13px;
+  color: #ffffff;
+}

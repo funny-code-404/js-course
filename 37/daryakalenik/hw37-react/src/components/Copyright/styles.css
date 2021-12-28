@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+.copyrightWrapper {
+  width: 206px;
+  margin: 0 auto;
+  padding-bottom: 18px;
+}
+
+.copyrightWrapper > p {
+  font-family: Abel;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.38px;
+  color: #333333;
+}
