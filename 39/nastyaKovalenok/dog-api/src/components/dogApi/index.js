@@ -5,7 +5,7 @@ import './style.css';
 const DogApi = () => {
     const [dog, setDog] = useState('')
 
-    const dogArr = ['Akita', 'Chow', 'Boxer', 'Husky', 'Mix']
+    const dogArr = ['akita', 'chow', 'boxer', 'husky', 'mix']
 
     useEffect(() => {
         fetch('https://dog.ceo/api/breeds/image/random')
@@ -20,6 +20,7 @@ const DogApi = () => {
             fetch(`https://dog.ceo/api/breed/${id}/images/random`)
                 .then(res => res.json())
                 .then(data => setDog(data.message))
+            console.log(dog)
         }
     }
 
