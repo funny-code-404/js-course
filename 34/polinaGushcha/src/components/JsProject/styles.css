@@ -1,0 +1,56 @@
+.clock {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 202, 255);
+  border: 4px solid rgb(54, 25, 68);
+  border-radius: 50%;
+}
+.hour,
+.minute,
+.second {
+  position: absolute;
+}
+.hour, .hourLine {
+  width: 160px;
+  height: 160px;
+}
+.minute, .minuteLine {
+  width: 190px;
+  height: 190px;
+}
+.second, .secondLine {
+  width: 230px;
+  height: 230px;
+}
+.hourLine, .minuteLine, .secondLine {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.hourLine::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 80px;
+  background-color: white;
+  z-index: 10;
+}
+.minuteLine::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 96px;
+  background-color: red;
+  z-index: 11;
+}
+.secondLine::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 116px;
+  background-color: black;
+  z-index: 12;
+}
