@@ -1,0 +1,21 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.dog{
+    background-color: antiquewhite;
+    width: 110px;
+    height: 50px;
+    font-size: 30px;
+    border: black 2px solid;
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+}
+img{
+    display: block;
+     height: 400px;
+    margin-left: auto;
+    margin-right: auto
+ }
