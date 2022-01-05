@@ -19,8 +19,10 @@ const DogApi = () => {
         if (tagName === 'A') {
             fetch(`https://dog.ceo/api/breed/${id}/images/random`)
                 .then(res => res.json())
-                .then(data => setDog(data.message))
-            console.log(dog)
+                .then(data => {
+                    data.status === 'success' && console.log('Собака была загружена')
+                    setDog(data.message)
+                })
         }
     }
 
@@ -28,8 +30,8 @@ const DogApi = () => {
         <Fragment>
             <nav onClick={handlerChangeImgClick} className='wrapper'>
                 {
-                    dogArr.map((item,index) => (
-                        <GetBreed breed={item} className='dog' key={item+index}/>
+                    dogArr.map((item, index) => (
+                        <GetBreed breed={item} className='dog' key={item + index}/>
                     ))
                 }
             </nav>
