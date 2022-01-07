@@ -50,8 +50,8 @@ let numbers = [1, , 2, 2, 3, 3, 3, 4, 4, 5, 5, 5];
 let allNumbers = numbers.map(String);
 
 let wordsCount = allNumbers.reduce((count, number) => {
-	count[number] = count[number] ? count[number] + 1 : 1;
-	return count;
+    count[number] = count[number] ? count[number] + 1 : 1;
+    return count;
 }, {});
 
 console.log(wordsCount);
@@ -65,31 +65,32 @@ let result = array.filter(el => !!el);
 
 //написать функцию нахождения максимального/минимального числа в массuве
 let numbers = [1, 2, 3, 4, 5, 5];
+
 function highAndLow(numbers) {
-	numbers = numbers.split(' ');
-	return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+    numbers = numbers.split(' ');
+    return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
 }
 
 //
 function greet(name) {
-	console.log("Hello, " + name);
+    console.log("Hello, " + name);
 }
 greet(prompt("Enter Name:"));
 
 // Выведите на экран элемент с ключом 'c' двумя способами
 let testobj = {
-	a: 1,
-	b: 2,
-	c: 3
+    a: 1,
+    b: 2,
+    c: 3
 };
 console.log(testobj['c']);
 console.log(testobj.c);
 
 //Создайте массив заработных плат obj. Выведите на экран зарплату Пети и Коли.
 let obj = {
-	Петя: 1000,
-	Коля: 5000,
-	Вася: 2000
+    Петя: 1000,
+    Коля: 5000,
+    Вася: 2000
 };
 let salaries = Object.values(obj);
 let names = Object.keys(obj);
@@ -103,34 +104,34 @@ console.log(`Зарплата Коли ` + salaries[1]);
 
 var obj = { 1: 'пн', 2: 'вт', 3: 'ср', 4: 'чт', 5: 'пт', 6: 'сб', 7: 'вс' };
 let allDays = Object.values(obj);
-let day = Object.keys(obj).filter(function (key) { return obj[key] })[1];
+let day = Object.keys(obj).filter(function(key) { return obj[key] })[1];
 console.log(`Сегодня ` + allDays[1]);
 console.log(day);
 
 //
 for (let i = 1; i < 100; i++) {
-	if (i % 3 === 0 && i % 5 === 0) {
-		console.log(fizzBuzz);
-	} else if (i % 3 === 0) {
-		console.log(fizz);
-	} else if (i % 5 === 0) {
-		console.log(buzz);
-	} else {
-		console.log(i);
-	}
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log(fizzBuzz);
+    } else if (i % 3 === 0) {
+        console.log(fizz);
+    } else if (i % 5 === 0) {
+        console.log(buzz);
+    } else {
+        console.log(i);
+    }
 }
 
 /////////////////    Palindrom
 let str = 'abcdedcba',
-	str2 = 'abcded';
+    str2 = 'abcded';
 
 function isPalindrome(str) {
-	let strReverse = str.split('').reverse().join('');
-	if (strReverse == str) {
-		return 'yes';
-	} else {
-		return 'no';
-	}
+    let strReverse = str.split('').reverse().join('');
+    if (strReverse == str) {
+        return 'yes';
+    } else {
+        return 'no';
+    }
 }
 
 test = isPalindrome('abcdedcba');
