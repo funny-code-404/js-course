@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.error {
+    border: red 1px solid;
+}
+
+p{
+    color: red;
+    font-size: 12px;
+}
+
