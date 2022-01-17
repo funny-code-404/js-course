@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+}
+.dogs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40%;
+  width: 18%;
+  height: 50px;
+  font-size: 26px;
+  border: 1px solid red;
+  color: #fff;
+  background-color: rgb(33, 133, 180);
+  font-family: fantasy;
+}
+.dogs:not(:last-child) {
+  margin-right: 5px;
+}
+.image {
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+.title {
+  text-align: center;
+}

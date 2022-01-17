@@ -1,0 +1,14 @@
+.phoneColumn{
+    margin: 10px;
+    width: 150px;
+    border: 1px solid khaki;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.link{
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid orange;
+}
