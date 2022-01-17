@@ -1,13 +1,13 @@
-import picture from "/assets/avatar/picture";
+import picture from "./picture";
 import styles from "./style";
-import { imgAndInfoWrapper } from "../../index";
+import { imgAndInfoWrapper } from "../cv";
 
 class Avatar {
-  createAvatar() {
+  createAvatar(container) {
     const avatar = document.createElement("img");
     avatar.src = picture;
     avatar.classList.add(`avatar`);
-    imgAndInfoWrapper.appendChild(avatar);
+    container.appendChild(avatar);
   }
 }
 

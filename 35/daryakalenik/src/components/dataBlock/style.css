@@ -1,0 +1,19 @@
+.name {
+  font-size: 20px;
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+.name > p {
+  color: cornflowerblue;
+  margin-top: 5px;
+}
+
+.listWrapper {
+  width: 500px;
+  margin: 0 auto;
+  list-style-type: none;
+  text-align: justify;
+}

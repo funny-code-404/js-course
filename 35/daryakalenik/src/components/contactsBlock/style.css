@@ -1,0 +1,21 @@
+.form {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.revButton {
+  width: 200px;
+}
+
+.revPar {
+  margin-top: 30px;
+}
+
+.revWrapper {
+  width: 600px;
+  margin: 0 auto;
+  list-style-type: none;
+  margin-top: 50px;
+  font-size: 20px;
+  text-align: center;
+}
