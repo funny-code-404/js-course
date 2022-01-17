@@ -1,7 +1,7 @@
 {
   "name": "js-course",
   "version": "1.0.0",
-  "description": "",
+  "description": "- Тетрадь, Ручка / Карандаш\r  - В идеале посещать занятия со своим компьютером. В классе есть рабочие машины, но гораздо удобнее работать в привычной среде, со знакомой клавиатурой/системой/редактором. Так что это не обязательно, но в ваших интересах.",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -17,10 +17,14 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.15.0",
+    "jest": "^27.0.6",
+    "babel-jest": "^27.0.6"
+  },
+  "homepage": "https://github.com/feelfaque/js-course#readme",
+  "dependencies": {
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
     "babel-jest": "^27.0.6",
     "jest": "^27.0.6"
-  },
-  "dependencies": {
-    "react-router-dom": "^6.2.1"
   }
 }
