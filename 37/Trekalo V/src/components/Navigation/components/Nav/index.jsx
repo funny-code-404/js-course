@@ -1,4 +1,5 @@
 import React from "react";
+
 import { navItems } from "../Search/constants";
 import "./styles.css";
 
