@@ -5,9 +5,9 @@ import "./styles.css";
 export function Navigation(props) {
   return (
     <div className="navigation">
-      <Logo />
+      <Logo title="Your Logo" />
       <Nav />
-      <Search />
+      <Search title="Search" />
     </div>
   );
 }

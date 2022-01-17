@@ -1,0 +1,36 @@
+@import "~normalize.css";
+
+body {
+  font-family: monospace;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav > a {
+  font-size: 30px;
+  margin: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: cornflowerblue;
+  font-weight: bold;
+}
+
+.wrapper {
+  border: 1px solid #696969;
+  margin: 5px;
+}
+
+.imgAndInfoWrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dateAndSignWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

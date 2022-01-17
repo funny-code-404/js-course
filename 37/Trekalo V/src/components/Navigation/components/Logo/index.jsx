@@ -1,10 +1,10 @@
 import React from "react";
 import "./styles.css";
 
-export function Logo(props) {
+export function Logo({ title }) {
   return (
     <div>
-      <p className="logo">Your Logo</p>
+      <p className="logo">{title}</p>
     </div>
   );
 }

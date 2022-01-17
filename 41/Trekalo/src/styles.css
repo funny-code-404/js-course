@@ -1,0 +1,28 @@
+.wrapper {
+  width: 500px;
+  border: 1px solid black;
+  min-height: 500px;
+}
+.top {
+  display: flex;
+}
+.top_item {
+  flex-basis: 50%;
+  text-align: center;
+  border: 1px solid red;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.bottom_item {
+  flex-basis: 50%;
+  margin: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+}
+.bottom_user {
+  display: flex;
+}

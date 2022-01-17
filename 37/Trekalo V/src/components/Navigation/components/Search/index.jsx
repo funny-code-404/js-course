@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-export function Search() {
-  return <div className="search">Search</div>;
+
+export function Search({ title }) {
+  return <div className="search">{title}</div>;
 }

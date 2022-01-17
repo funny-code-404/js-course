@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+}
+
+.name,
+.email,
+.password {
+  margin: 20px;
+}
+
+.error {
+  margin: 10px;
+  color: red;
+}
+
+label {
+  padding-right: 5px;
+}
+
+button {
+  margin-left: 20px;
+}
