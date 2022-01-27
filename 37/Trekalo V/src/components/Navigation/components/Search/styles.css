@@ -1,0 +1,11 @@
+.search {
+  min-width: 30px;
+  min-height: 30px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}

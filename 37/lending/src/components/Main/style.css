@@ -1,0 +1,223 @@
+body > main {
+  max-width: 941px;
+  margin: 0 auto;
+}
+
+.story {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 57px;
+  margin: 0 auto;
+}
+
+.story__header {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: normal;
+  color: #48555b;
+  letter-spacing: 2.31px;
+  margin-bottom: 50px;
+  position: relative;
+  margin-top: 57px;
+}
+
+.story__header:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: #00a4e5;
+  margin: 0 auto;
+  display: block;
+  margin-top: 15px;
+}
+
+.story__text p:first-child {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: normal;
+  color: #48555b;
+  font-size: 20px;
+  line-height: 27px;
+  max-width: 405px;
+  margin-bottom: 30px;
+}
+
+.story__text p:first-child > span {
+  color: #00a4e5;
+}
+
+.story__text p:last-child {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  color: #48555b;
+  font-size: 13px;
+  line-height: 23px;
+  max-width: 405px;
+}
+
+.story__pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.story__pictures > .text {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-style: normal;
+  color: #fff;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 15px;
+}
+
+.story__picture1 {
+  background: url(../../img/plan.jpg) center center/cover no-repeat;
+  width: 140px;
+  height: 224px;
+  margin-left: 20px;
+}
+
+.story__picture2 {
+  background: url(../../img/manage.jpg) center center/cover no-repeat;
+  width: 140px;
+  height: 224px;
+  margin-left: 20px;
+}
+
+.story__picture3 {
+  background: url(../../img/build.jpg) center center/cover no-repeat;
+  width: 140px;
+  height: 224px;
+  margin-left: 20px;
+}
+
+.capabilities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 110px;
+  margin-bottom: 150px;
+}
+
+.capabilities__header {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: normal;
+  color: #48555b;
+  font-size: 18px;
+  line-height: 24.5px;
+  letter-spacing: 2.31px;
+  max-width: 200px;
+  position: relative;
+}
+
+.capabilities > .__header:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: #00a4e5;
+  margin: 0 auto;
+  display: block;
+  margin-top: 15px;
+}
+
+.capabilities__text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  color: #48555b;
+  font-size: 11px;
+  line-height: 19px;
+  max-width: 405.1px;
+}
+
+.capabilities__services > input {
+  background-color: #00a4e5;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  border: transparent;
+  cursor: pointer;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 17.7px;
+  letter-spacing: 0.5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.capabilities__services > input:hover {
+  background-color: firebrick;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.skills__manage,
+.skills__audit,
+.skills__factory {
+  border: 1px solid #e6e6e6;
+  max-width: 295px;
+  padding: 38px 23px 39px 23px;
+}
+
+.skills > .text > h4 {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #48555b;
+  padding-top: 25px;
+}
+
+.skills > .text > p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 23px;
+  padding-top: 40px;
+}

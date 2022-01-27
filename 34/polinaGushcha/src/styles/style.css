@@ -1,0 +1,12 @@
+@import '~normalize.css';
+body {
+  background-color: rgb(119, 87, 145);
+}
+.navigationStyle {
+  display: flex;
+  justify-content: space-around;
+}
+.links {
+  color: white;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,10 @@
+.navigation {
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
