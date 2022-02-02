@@ -39,3 +39,22 @@
     bottom: -35px;
 }
 
+select{
+    font-size: 14px;
+    margin: 5px;
+}
+
+.low{
+    border: 3px solid darkgreen;
+}
+
+.medium{
+    border: 3px solid goldenrod;
+}
+
+.high{
+    border: 3px solid red;
+}
+
+
+

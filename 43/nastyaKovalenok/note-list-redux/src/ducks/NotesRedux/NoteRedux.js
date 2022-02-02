@@ -2,6 +2,7 @@ export const CREATE_NOTE = "CREATE_NOTE";
 export const DELETE_NOTE = 'DELETE_NOTE';
 export const EDIT_NOTE = 'EDIT_NOTE';
 export const OPEN_WINDOW_FOR_EDIT = 'OPEN_WINDOW_FOR_EDIT'
+export const PRIORITY_SELECTION = 'PRIORITY_SELECTION'
 
 export const initialState = [];
 
@@ -33,6 +34,13 @@ export const ACTION_OPEN_WINDOW_FOR_EDIT = (payload) => {
     }
 }
 
+export const ACTION_PRIORITY_SELECTION = (payload) => {
+    return {
+        type: PRIORITY_SELECTION,
+        payload
+    }
+}
+
 export const notesSelector = state => state;
 
 export const reducer = (state = initialState, action) => {
@@ -43,7 +51,8 @@ export const reducer = (state = initialState, action) => {
                 {
                     value: action.payload,
                     id: state.length + 1,
-                    isShowEdit: false
+                    isShowEdit: false,
+                    priority: ''
                 }
             ]);
         case DELETE_NOTE:
@@ -52,7 +61,7 @@ export const reducer = (state = initialState, action) => {
             ]);
         case OPEN_WINDOW_FOR_EDIT:
             return ([
-                ...state.map((item, index, array) => {
+                ...state.map((item) => {
                         if (item.id === action.payload) {
                             item.isShowEdit = !item.isShowEdit
                         }
@@ -62,11 +71,21 @@ export const reducer = (state = initialState, action) => {
             ]);
         case EDIT_NOTE:
             return ([
-                ...state.map((item, index, array) => {
+                ...state.map((item) => {
                         if (item.id === action.payload.id) {
                             item.value = action.payload.value
                         }
                     return item
+                    }
+                ),
+            ]);
+        case PRIORITY_SELECTION:
+            return ([
+                ...state.map((item) => {
+                        if (item.id === action.payload.id) {
+                            item.priority = action.payload.value
+                        }
+                        return item
                     }
                 ),
             ])

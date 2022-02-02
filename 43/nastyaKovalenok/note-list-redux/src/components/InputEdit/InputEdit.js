@@ -1,6 +1,7 @@
 import {useDispatch} from "react-redux";
 import {useState} from "react";
 import {ACTION_EDIT_NOTE} from "../../ducks/NotesRedux/NoteRedux";
+import './InputEdit.css'
 
 const InputEdit = ({value, id}) => {
     const dispatch = useDispatch()
@@ -21,8 +22,13 @@ const InputEdit = ({value, id}) => {
 
     return (
         <div>
-            <input type="text" value={valueInput} onChange={handlerChangeUseState} placeholder={value}/>
-            <button id={id} onClick={handlerEditNote}>Apply</button>
+            <input type="text" value={valueInput}
+                   onChange={handlerChangeUseState}
+                   placeholder={value}
+                   className='inputEdit'/>
+            <button id={id}
+                    onClick={handlerEditNote}
+                    className='buttonApply'>Apply</button>
         </div>
     )
 }
