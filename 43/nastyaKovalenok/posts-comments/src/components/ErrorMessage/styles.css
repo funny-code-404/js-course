@@ -1,0 +1,11 @@
+.error{
+    width: 10em;
+    height: 10em;
+    border: 2px solid red;
+    border-radius: 50%;
+    background: mistyrose;
+    color: black;
+    text-align: center;
+    line-height: 10em;
+    margin: 0 auto;
+}
