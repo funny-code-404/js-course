@@ -1,31 +1,25 @@
 import styles from "./styles.css";
 import axios from "axios";
+import {changeDog} from "../../api/index"
 
 const NavigationItems = (props) => {
-  async function changeDog(dog) {
-    const result = await axios(
-      `https://dog.ceo/api/breed/${dog}/images/random`
-    );
-    props.updateData(result.data.message);
-    alert(`New dog is here!`);
-  }
   const handleClick = (e) => {
     console.log(e.target.id);
     switch (e.target.id) {
       case `akita`:
-        changeDog(`akita`);
+        changeDog(`akita`, props);
         break;
       case `chow`:
-        changeDog(`chow`);
+        changeDog(`chow`, props);
         break;
       case `boxer`:
-        changeDog(`boxer`);
+        changeDog(`boxer`, props);
         break;
       case `husky`:
-        changeDog(`husky`);
+        changeDog(`husky`, props);
         break;
       case `mix`:
-        changeDog(`mix`);
+        changeDog(`mix`, props);
         break;
     }
   };
