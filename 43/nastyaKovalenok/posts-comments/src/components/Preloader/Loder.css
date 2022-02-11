@@ -1,0 +1,21 @@
+/*.loading{
+    background-color: blue;
+    position: fixed;
+    color: white;
+    font-size: 5rem;
+    padding: 20px;
+    width: 100%;
+    height: 87vh;
+}*/
+
+.loading{
+    width: 10em;
+    height: 10em;
+    border: 2px solid blue;
+    border-radius: 50%;
+    background: lightblue;
+    color: black;
+    text-align: center;
+    line-height: 10em;
+    margin: 0 auto;
+}
