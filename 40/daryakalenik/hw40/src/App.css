@@ -1,0 +1,17 @@
+.nav-item {
+  margin-right: 10px;
+}
+
+.active {
+  color: red;
+}
+
+.routes-wrapper {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.link-item {
+  margin-left: 5px;
+}
