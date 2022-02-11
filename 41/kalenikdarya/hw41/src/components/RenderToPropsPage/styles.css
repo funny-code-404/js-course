@@ -1,0 +1,11 @@
+.form {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
