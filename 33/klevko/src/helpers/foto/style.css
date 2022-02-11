@@ -1,0 +1,12 @@
+.foto {
+  width: 40%;
+  background: contain no-repeat;
+  margin-left: 10px;
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+}
+
+.backgroundFoto {
+  width: 100%;
+}

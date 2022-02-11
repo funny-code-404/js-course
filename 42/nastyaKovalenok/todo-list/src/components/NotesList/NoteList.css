@@ -1,0 +1,17 @@
+
+.noteItem{
+    font-size: 20px;
+    border: 2px solid #313542;
+    border-radius: 5px;
+    width: 700px;
+    margin-top: 15px;
+    word-wrap: break-word;
+    text-align: center;
+block-size: auto;
+}
+
+.buttonDel {
+    margin-left: 102%;
+    cursor: pointer;
+    border-radius: 5px;
+}

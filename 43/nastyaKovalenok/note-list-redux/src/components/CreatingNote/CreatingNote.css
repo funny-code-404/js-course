@@ -1,0 +1,21 @@
+.wrapper{
+    margin: 0 auto;
+    width: 850px;
+}
+
+.inputNote{
+    width: 700px;
+    border: 1px solid rgba(0,0,0,875);
+    height: 40px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+button{
+    border: 1px solid rgba(0,0,0,875);
+    border-radius: 3px;
+    height: 35px;
+    width: 120px;
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
