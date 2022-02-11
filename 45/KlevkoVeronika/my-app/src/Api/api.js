@@ -15,16 +15,7 @@ export const api = () => {
     return data;
   };
 
-  // const post = async (url) => {
-  //   const data = await request(url, {
-  //     method: 'POST',
-  //   });
-
-  //   return data;
-  // };
-
   return {
     get,
-    // post,
   };
 };

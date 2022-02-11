@@ -19,7 +19,6 @@ export function* getScopeDataSaga(action) {
   }
 }
 
-//
 export function* scopeDataSaga() {
   yield takeLatest(GET_SCOPE_DATA, getScopeDataSaga);
 }

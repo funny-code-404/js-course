@@ -7,14 +7,6 @@ export const pokemonApi = {
 
     const otherRes = await API.get(res.species.url);
 
-    // const genderUrl = `https://pokeapi.co/api/v2/gender/${res.id}`; ОШИБКА - НЕ ПОЛУЧАЕТ ДАННЫЕ
-    // const gender = await API.get(genderUrl);
-    // console.log(gender);
-
-    // const habitatUrl = `https://pokeapi.co/api/v2/pokemon-habitat/${res.id}`; //ОШИБКА - НЕ ПОЛУЧАЕТ ДАННЫЕ
-    // const habitat = await API.get(habitatUrl);
-    // console.log(habitat);
-
     const data = {
       image: res.sprites.front_default,
       height: res.height,
@@ -23,8 +15,6 @@ export const pokemonApi = {
       name: res.name,
       egg_groups: otherRes.egg_groups.map((item) => item.name),
       color: otherRes.color.name,
-      // gender: gender.name,
-      // 1: habitat.name
     };
     return data;
   },

@@ -3,7 +3,6 @@ import {
   GET_POKEMONS_REQUESTED,
   GET_POKEMONS_SUCCED,
   GET_SCOPE_DATA,
-  FIND_POKEMON,
 } from './actions';
 import { initialPokemonsState } from './initialPokemonsState';
 
@@ -28,11 +27,6 @@ export const pokemonsReducer = (state = initialPokemonsState, action) => {
         isLoading: false,
       };
     case GET_SCOPE_DATA:
-      return {
-        ...state,
-        isLoading: true,
-      };
-    case FIND_POKEMON:
       return {
         ...state,
         isLoading: true,

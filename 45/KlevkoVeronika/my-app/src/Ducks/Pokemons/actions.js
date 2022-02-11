@@ -22,8 +22,3 @@ export const ACTION_GET_SCOPE_DATA = (payload) => ({
   payload,
 });
 
-export const FIND_POKEMON = 'FIND_POKEMON';
-export const ACTION_FIND_POKEMON = (payload) => ({
-  type: FIND_POKEMON,
-  payload,
-}); //

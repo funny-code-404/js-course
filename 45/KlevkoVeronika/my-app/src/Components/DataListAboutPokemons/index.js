@@ -19,4 +19,3 @@ export const DataListAboutPokemons = ({ url }) => {
     </>
   );
 };
-// ?limit=150

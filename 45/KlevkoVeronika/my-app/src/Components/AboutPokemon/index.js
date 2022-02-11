@@ -4,7 +4,6 @@ import { getEggGroup } from './Hooks/getEggGroup';
 
 export const AboutPokemon = () => {
   const [handleClick, state] = getDataAboutPokemon();
-  console.log(state);
 
   return (
     <>
@@ -19,7 +18,6 @@ export const AboutPokemon = () => {
           Egg Groups:
           <ul>{getEggGroup(state)}</ul>
         </div>
-        {/* <div>Gender ratio:</div> */}
         <div>Height: {state.weight} cm</div>
         <div>Weight: {state.height} kg</div>
         <div>Pokédex color: {state.color}</div>
