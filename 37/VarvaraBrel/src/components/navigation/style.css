@@ -1,0 +1,17 @@
+.nav {
+  background-color: rgb(75, 74, 74);
+  overflow: hidden;
+}
+
+.nav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: grey;
+  color: black;
+}
