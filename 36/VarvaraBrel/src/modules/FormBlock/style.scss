@@ -1,0 +1,39 @@
+.ulReview {
+  width: 800px;
+  margin: auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.ulReview > li {
+  margin: 40px auto;
+  border: solid black 2px;
+  padding: 20px 40px;
+}
+
+.nameReview {
+  font-size: 24px;
+}
+
+.emailReview {
+  font-size: 18px;
+}
+
+.reviewReview {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+.ulReview > li > button {
+  float: right;
+  margin: -40px 0px;
+}
+
+.form {
+  width: 800px;
+  margin: auto;
+
+  input {
+    margin: 10px 10px;
+  }
+}

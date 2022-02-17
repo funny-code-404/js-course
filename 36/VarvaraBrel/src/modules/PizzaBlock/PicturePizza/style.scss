@@ -1,0 +1,31 @@
+#picture-wrapper {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  background-color: #ffe473;
+}
+
+#pizza-image {
+  display: block;
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+#button-order {
+  margin: auto 130px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#button-order:hover {
+  border: 1px solid #a3ad10;
+  background-color: #cf9008;
+  color: #fff;
+}
+
+#button-order:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #8f8080;
+  color: #cec9c9;
+}
