@@ -1,0 +1,36 @@
+.formWrapper {
+  display: inline-block;
+  vertical-align: middle;
+  width: 400px;
+  height: 450px;
+  margin: 20px 20px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.commonWrapper {
+  margin: 20px auto;
+  width: 300px;
+  border: 1px solid black;
+}
+
+input[type='text'] {
+  margin: 15px auto;
+  width: 60%;
+  height: 15px;
+  display: block;
+}
+
+input[type='checkbox'] {
+  margin: 20px 20%;
+  display: block;
+}
+
+button {
+  margin: 40px auto;
+  float: right;
+}
+
+textarea {
+  height: 70px;
+}
