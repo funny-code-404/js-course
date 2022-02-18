@@ -1,0 +1,38 @@
+#listBlockWrapper {
+  width: 800px;
+  height: 200px;
+  margin: auto;
+  display: table;
+  background-color: #ffe473;
+}
+.ListColumn {
+  display: table-cell;
+}
+
+.ListName {
+  text-align: center;
+  color: #073847;
+}
+
+.ListColumn > ul > li {
+  margin: 5px auto;
+}
+
+.ButtonIng {
+  margin: auto 20px;
+  background-color: #0099cc;
+  color: #fff;
+  height: 1.7em;
+  cursor: pointer;
+  font-size: 14px;
+}
+.ButtonIng:hover {
+  background-color: #cc7400;
+}
+
+.ButtonIng:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
