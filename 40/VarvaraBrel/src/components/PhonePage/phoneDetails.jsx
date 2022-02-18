@@ -10,7 +10,7 @@ const PhonesDetails = () => {
   const friendsArray = [];
 
   friends.forEach((e) => {
-    let friend = contacts.find((item) => item.id === e);
+    const friend = contacts.find((item) => item.id === e);
     friendsArray.push(friend);
   });
 
