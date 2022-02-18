@@ -1,0 +1,25 @@
+.content {
+  display: flex;
+}
+
+.side {
+  background-color: rgb(189, 189, 189);
+  flex: 30%;
+  padding: 20px;
+}
+
+.main {
+  background-color: white;
+  flex: 70%;
+  padding: 20px;
+}
+
+.img {
+  height: 200px;
+  width: 100%;
+}
+
+.imgPost {
+  height: 200px;
+  width: 100%;
+}
