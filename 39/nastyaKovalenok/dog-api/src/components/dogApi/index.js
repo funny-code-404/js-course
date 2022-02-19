@@ -1,28 +1,36 @@
 import {useState, useEffect, Fragment} from "react";
 import GetBreed from "../getBreedDog";
+import {dogArr} from './constans'
+import {allDogsUrl} from "./constans";
 import './style.css';
 
 const DogApi = () => {
     const [dog, setDog] = useState('')
 
-    const dogArr = ['akita', 'chow', 'boxer', 'husky', 'mix']
-
     useEffect(() => {
-        fetch('https://dog.ceo/api/breeds/image/random')
-            .then(res => res.json())
-            .then(data => setDog(data.message))
+        getRandomDog(allDogsUrl)
     }, [])
 
+    const getRandomDog = (url) => {
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setDog(data.message))
+    }
+
+    const getBreedDog = (id) => {
+        const url = `https://dog.ceo/api/breed/${id}/images/random`
+        fetch(url)
+            .then(res => res.json())
+            .then(data => {
+                data.status === 'success' && console.log('Собака была загружена')
+                setDog(data.message)
+            })
+    }
 
     const handlerChangeImgClick = (e) => {
         const {tagName, id} = e.target
         if (tagName === 'A') {
-            fetch(`https://dog.ceo/api/breed/${id}/images/random`)
-                .then(res => res.json())
-                .then(data => {
-                    data.status === 'success' && console.log('Собака была загружена')
-                    setDog(data.message)
-                })
+           getBreedDog(id)
         }
     }
 
