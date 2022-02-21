@@ -9,10 +9,10 @@ class Socials extends Component {
   render() {
     return (
       <div className="socialsWrapper">
-        <img src={instagram}></img>
-        <img src={facebook}></img>
-        <img src={link}></img>
-        <img src={pinterest}></img>
+        <img src={instagram} />
+        <img src={facebook} />
+        <img src={link} />
+        <img src={pinterest} />
       </div>
     );
   }

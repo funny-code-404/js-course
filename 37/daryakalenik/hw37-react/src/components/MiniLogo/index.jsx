@@ -6,7 +6,7 @@ class MiniLogo extends Component {
   render() {
     return (
       <div className="miniLogo">
-        <img src={miniLogo}></img>
+        <img src={miniLogo} />
       </div>
     );
   }
