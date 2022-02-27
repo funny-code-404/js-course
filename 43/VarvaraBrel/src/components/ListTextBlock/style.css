@@ -1,0 +1,11 @@
+.high {
+  border: 2px solid red;
+}
+
+.medium {
+  border: 2px solid yellow;
+}
+
+.low {
+  border: 2px solid green;
+}
