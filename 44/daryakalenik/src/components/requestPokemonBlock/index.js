@@ -1,17 +1,10 @@
-import { useDispatch } from "react-redux";
-import { GET_POKEMONS_REQUESTED } from "../../ducks/pokemons/actions";
+import { useGetPokemons } from "./hooks/useGetPokemons";
 
 const RequestPokemonBlock = () => {
-  const dispatch = useDispatch();
-  const handleClick = () => {
-    dispatch({
-      type: GET_POKEMONS_REQUESTED,
-      payload: `https://pokeapi.co/api/v2/pokemon?limit=10&offset=200`,
-    });
-  };
+  const getPokemonNames = useGetPokemons();
   return (
     <div>
-      <button onClick={handleClick}>Get Pokemons</button>
+      <button onClick={getPokemonNames}>Get Pokemons</button>
     </div>
   );
 };

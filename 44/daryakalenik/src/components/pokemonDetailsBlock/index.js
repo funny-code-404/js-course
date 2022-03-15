@@ -1,15 +1,8 @@
-import { useNavigate, useParams } from "react-router-dom";
-import { useSelector} from "react-redux";
+import { useGetPokemonsDetails } from "./hooks/useGetPokemonsDetails";
 
 const PokemonDetailsBlock = () => {
-  const pokemonName = useParams().name;
-  const navigate = useNavigate();
-  const pokemonDetails = useSelector((store) => {
-    return store.details.data;
-  });
-  console.log(pokemonDetails);
-  const abilities = pokemonDetails.abilities;
-  const sprite = pokemonDetails.sprites?.front_default;
+  const { pokemonName, navigate, pokemonDetails, abilities, sprite } =
+    useGetPokemonsDetails();
   return (
     <div>
       <h1>{pokemonName}</h1>

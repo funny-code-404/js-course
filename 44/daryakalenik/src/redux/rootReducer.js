@@ -1,5 +1,5 @@
-import { combineReducers } from "redux";
-import pokemonReducer from "../ducks/pokemons/reducer";
+import { combineReducers } from "@reduxjs/toolkit";
+import { pokemonReducer } from "../ducks/pokemons/reducer";
 import pokemonDetailsReducer from "../ducks/pokemonDetails/reducer";
 
 const rootReducer = combineReducers({

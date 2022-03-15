@@ -1,20 +1,9 @@
-import { useSelector, useDispatch } from "react-redux";
-import { GET_POKEMONS_DETAILS_REQUESTED } from "../../ducks/pokemonDetails/actions";
+import { useGetPokemonsNames } from "./hooks/useGetPokemonsNames";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import styles from "./styles.css";
 
 const ReceivePokemonBlock = () => {
-  const dispatch = useDispatch();
-  const pokemon = useSelector((store) => {
-    return store.data.data.results;
-  });
-  const handleClick = (e) => {
-    const url = pokemon[e.target.id].url;
-    dispatch({
-      type: GET_POKEMONS_DETAILS_REQUESTED,
-      payload: url,
-    });
-  };
+  const { pokemon, fetchPokemonDetails } = useGetPokemonsNames();
   return (
     <div>
       {pokemon
@@ -25,7 +14,7 @@ const ReceivePokemonBlock = () => {
                 key={index}
                 id={index}
                 className="pokemon-name"
-                onClick={handleClick}
+                onClick={fetchPokemonDetails}
               >
                 {pokemon.name}
               </Link>
