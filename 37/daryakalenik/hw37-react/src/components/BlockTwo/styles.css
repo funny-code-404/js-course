@@ -1,0 +1,20 @@
+h4 {
+  font-family: Chivo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h5 {
+  font-family: Chivo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.13px;
+  color: #ffffff;
+}
