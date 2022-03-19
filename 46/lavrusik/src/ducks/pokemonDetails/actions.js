@@ -1,0 +1,15 @@
+export const GET_DETAILS_POKEMON = 'GET_DETAILS_POKEMON';
+export const GET_DETAILS_POKEMON_SUCCEED = 'GET_DETAILS_POKEMON_SUCCEED';
+export const GET_DETAILS_POKEMON_FAILED = 'GET_DETAILS_POKEMON_FAILED';
+export const ACTION_GET_DETEAILS_POKEMON = (payload) => ({
+    type: GET_DETAILS_POKEMON,
+    payload,
+})
+export const ACTION_GET_DETAILS_POKEMON_SUCCEED = (payload) => ({
+    type: GET_DETAILS_POKEMON_SUCCEED,
+    payload,
+})
+export const ACTION_GET_DETAILS_POKEMON_FAILED = (payload) => ({
+    type: GET_DETAILS_POKEMON_FAILED,
+    payload,
+})
