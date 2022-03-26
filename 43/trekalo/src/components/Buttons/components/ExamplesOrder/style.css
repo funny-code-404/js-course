@@ -1,0 +1,33 @@
+.order_with_examples {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+.example_block {
+  display: flex;
+  margin-top: 10px;
+}
+.example_view {
+  width: 248px;
+  height: 250px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.example_rules {
+  width: 248px;
+  height: 250px;
+  margin-left: 4px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rules {
+  overflow-y: scroll;
+}
