@@ -1,0 +1,17 @@
+.todo_item {
+  margin: 10px;
+  max-width: 300px;
+}
+
+.todo_item_title {
+  word-break: break-all;
+}
+.green-todo {
+  border: 1px solid green;
+}
+.blue-todo {
+  border: 1px solid blue;
+}
+.red-todo {
+  border: 1px solid red;
+}
