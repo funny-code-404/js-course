@@ -1,0 +1,6 @@
+.wrapper {
+  border: 5px solid black;
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+}
